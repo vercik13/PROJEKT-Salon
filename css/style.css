@@ -140,6 +140,13 @@ h2 {
 .omne {
   padding: 20px;
 }
+.omne__profil {
+  display: flex;
+  max-width: 300px;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 10px;
+}
 
 /* Sluzby */
 .services {
@@ -158,7 +165,7 @@ h2 {
 }
 .services__foto1, .services__foto2 {
   max-width: 100%;
-  width: 600px;
+  width: 300px;
   margin: 0 auto;
 }
 
@@ -267,6 +274,21 @@ h2 {
     margin: 0 auto;
     width: 100%;
     max-width: 600px;
+  }
+
+  /*  O mně */
+  .omne {
+    padding: 20px;
+    display: flex;
+  }
+  .omne__text {
+    margin: 20px;
+    order: 2;
+  }
+  .omne__profil {
+    max-width: 300px;
+    margin: 20px;
+    width: 100%;
   }
 
   /* Služby */

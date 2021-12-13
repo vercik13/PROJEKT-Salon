@@ -109,6 +109,7 @@ h2 {
 .menu a:active {
   background-color: rgb(218, 214, 214);
 }*/
+
 /*odsud nahoru hlavička - šablona*/
 
 /* Úvod */
@@ -140,6 +141,14 @@ h2 {
 
 .omne {
   padding: 20px;
+  
+  &__profil {
+    display: flex;
+    max-width: 300px;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 10px;
+  }
 }
 
 /* Sluzby */
@@ -162,7 +171,7 @@ h2 {
   &__foto1,
   &__foto2 {
     max-width: 100%;
-    width: 600px;
+    width: 300px;
     margin: 0 auto;
   }
 }
@@ -283,6 +292,24 @@ h2 {
       margin: 0 auto;
       width: 100%;
       max-width: 600px;
+  }
+
+  /*  O mně */
+
+  .omne {
+    padding: 20px;
+    display: flex;
+    
+    &__text {
+      margin: 20px;
+      order: 2;
+    }
+
+    &__profil {
+      max-width: 300px;
+      margin: 20px;
+      width: 100%;
+    }
   }
 
    /* Služby */
