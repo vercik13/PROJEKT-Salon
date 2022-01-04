@@ -1,22 +1,30 @@
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
-
-
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 body {
-    margin: 0;
-    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
-    background-blend-mode: screen;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
+  margin: 0;
+  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+    radial-gradient(
+      91% 146%,
+      rgba(255, 255, 255, 0.5) 47%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  background-blend-mode: screen;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 h1,
 h2 {
   margin: 20px 0;
 }
-
 
 .projekt {
   max-width: 1100px;
@@ -25,18 +33,17 @@ h2 {
 }
 
 .header {
-    background-color: white;
-    padding: 20px;
-    border-bottom: 1px solid black;
-   
-    &__logo {
-      display: flex;
-      margin: 0 auto;
-      max-width: 300px;
-      width: 100%;
-    }
-  }
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid black;
 
+  &__logo {
+    display: flex;
+    margin: 0 auto;
+    max-width: 300px;
+    width: 100%;
+  }
+}
 
 .menu__checkbox {
   position: absolute;
@@ -54,7 +61,7 @@ h2 {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: #ECE2DF;
+  background-color: #ece2df;
   color: black;
 }
 
@@ -70,8 +77,9 @@ h2 {
   font-weight: bolder;
 }
 
-.menu__link:hover {
-  background-color: #77706e;
+.menu__link:hover,
+.menu__link:focus {
+  background-color: #8a8482;
   color: white;
 }
 
@@ -114,40 +122,39 @@ h2 {
 
 /* Úvod */
 .main__text {
-    display: block;
-    padding: 30px;
-    margin: 20px 40px;
-    text-align: center;
+  display: block;
+  padding: 30px;
+  margin: 20px 40px;
+  text-align: center;
 }
 
 .main__product {
-    display: flex;
-    padding: 0 20px;
-    margin: 60px auto 30px auto;
-    width: 100%;
-    max-width: 500px;
+  display: flex;
+  padding: 0 20px;
+  margin: 60px auto 30px auto;
+  width: 100%;
+  max-width: 500px;
 }
 
 .footer__copyright {
-    display: block;
-    background-color: rgb(66, 65, 65);
-    color: white;
-    margin-top: 100px;
-    padding: 10px;
-    text-align: center;
+  display: block;
+  background-color: rgb(66, 65, 65);
+  color: white;
+  margin-top: 100px;
+  padding: 10px;
+  text-align: center;
 }
 
 /* O mně */
 
 .omne {
   padding: 20px;
-  
+
   &__profil {
     display: flex;
     max-width: 300px;
     margin: 0 auto;
     width: 100%;
-    border-radius: 10px;
   }
 }
 
@@ -176,7 +183,6 @@ h2 {
   }
 }
 
-
 /* Fotogalerie */
 
 .main__galery {
@@ -184,7 +190,7 @@ h2 {
   max-width: 100%;
   width: 400px;
   margin: 0 auto;
-  border: 1px solid #ECE2DF;
+  border: 1px solid #ece2df;
 }
 
 /* Ceník */
@@ -221,7 +227,7 @@ h2 {
     font-size: 20px;
     font-weight: bolder;
   }
-  
+
   &__foto {
     display: flex;
     max-width: 550px;
@@ -236,10 +242,10 @@ h2 {
   &__map {
     display: flex;
     max-width: 100%;
-    
+
     padding-bottom: 20px;
   }
-  
+
   .button {
     border: none;
     padding: 0;
@@ -256,42 +262,41 @@ h2 {
 }
 
 @media screen and (min-width: 1040px) {
-
-    .menu__togler {
-      display: none;
-    }
-
-    .menu__list {
-      display: flex !important;
-      justify-content: space-between;
-      margin: 0;
-      padding: 0;
-      background-color: white;
-    }
-        
-    .menu__item {
-        border-bottom: 0;
-    }
-    .menu__link {
-        padding: 20px 50px;
-        background-color: white;
-    }
-
-    .menu {
-      border-bottom: 1px solid black;
-    }
-    
-    /* Uvod */
-    .main__text {
-      padding: 50px;
-      margin: 20px 40px;
+  .menu__togler {
+    display: none;
   }
-  
+
+  .menu__list {
+    display: flex !important;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+
+  .menu__item {
+    border-bottom: 0;
+  }
+  .menu__link {
+    padding: 20px 50px;
+    background-color: white;
+  }
+
+  .menu {
+    border-bottom: 1px solid black;
+  }
+
+  /* Uvod */
+  .main__text {
+    padding: 50px;
+    margin: 20px 40px;
+  }
+
   .main__product {
-      padding: 0;
-      margin: 0 auto;
-      width: 100%;
-      max-width: 600px;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
   }
 
   /*  O mně */
@@ -299,7 +304,7 @@ h2 {
   .omne {
     padding: 20px;
     display: flex;
-    
+
     &__text {
       margin: 20px;
       order: 2;
@@ -312,92 +317,97 @@ h2 {
     }
   }
 
-   /* Služby */
-    .services {
-      max-width: 1100px;
-      padding: 50px;
-      margin: 0;
-      text-align: left;
+  /* Služby */
+  .services {
+    max-width: 1100px;
+    padding: 50px;
+    margin: 0;
+    text-align: left;
 
-       h2,
-       h3 {
-        margin-top: 30px;
-      }
-      &__box,
-      &__box--second {
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        text-align: left;
-      }
-      &__text--primary {
-        max-width: 550px;
-      }
-
-      &__text--secondary {
-        margin-top: 50px;
-        max-width: 500px;
-        order: 2;
-      }
-  
-      &__foto1,
-      &__foto2 {
-        margin: 0;
-        display: flex;
-        width: 100%;
-        max-width: 400px;
-      }
-      &__foto1 {
-        margin-top: 50px;
-      }
-      &__box--second {
-        order: 2;
-      }
+    h2,
+    h3 {
+      margin-top: 30px;
     }
-
-    /* Fotogalerie */ 
-    .container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(4, 400px);
-      gap: 1px;
-    }
-
-    .main__galery img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    /* Kontakt */
-    .contact {
+    &__box,
+    &__box--second {
+      margin: 0 auto;
       display: flex;
-    
-      &__box,
-      &__map {
-        flex-basis: 50%;
-      }
-
-      &__map {
-        max-width: 500px;
-      }
-
-      &__box {
-        display: flex;
-        flex-direction: column;
-      }
-
-      &__address,
-      &__button {
-        flex-basis: 50%;
-      }
-
-      &__button {
-        height: 70px;
-        max-height: 10%;
-        margin: 0;
-        justify-content: flex-start;
-        flex-shrink: 1;
-      }
+      justify-content: space-between;
+      text-align: left;
     }
+    &__text--primary {
+      max-width: 550px;
+    }
+
+    &__text--secondary {
+      margin-top: 50px;
+      max-width: 500px;
+      order: 2;
+    }
+
+    &__foto1,
+    &__foto2 {
+      margin: 0;
+      display: flex;
+      width: 100%;
+      max-width: 400px;
+    }
+    &__foto1 {
+      margin-top: 50px;
+    }
+    &__box--second {
+      order: 2;
+    }
+  }
+
+  /* Fotogalerie */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 400px);
+    gap: 2px;
+  }
+
+  .main__galery img {
+    width: 300px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /*.container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    */
+  /* Kontakt */
+  .contact {
+    display: flex;
+
+    &__box,
+    &__map {
+      flex-basis: 50%;
+    }
+
+    &__map {
+      max-width: 500px;
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__address,
+    &__button {
+      flex-basis: 50%;
+    }
+
+    &__button {
+      height: 70px;
+      max-height: 10%;
+      margin: 0;
+      justify-content: flex-start;
+      flex-shrink: 1;
+    }
+  }
 }

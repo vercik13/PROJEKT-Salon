@@ -71,8 +71,9 @@ h2 {
   font-weight: bolder;
 }
 
-.menu__link:hover {
-  background-color: #77706e;
+.menu__link:hover,
+.menu__link:focus {
+  background-color: #8a8482;
   color: white;
 }
 
@@ -145,7 +146,6 @@ h2 {
   max-width: 300px;
   margin: 0 auto;
   width: 100%;
-  border-radius: 10px;
 }
 
 /* Sluzby */
@@ -330,18 +330,22 @@ h2 {
   }
 
   /* Fotogalerie */
-  .container {
+  /*.container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 400px);
-    gap: 1px;
+    grid-template-rows: repeat(6, 400px);
+    gap: 2px;
   }
 
-  .main__galery img {
+  /*.main__galery img {
+    width: 300px;
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
+  }*/
+  .container {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   /* Kontakt */
