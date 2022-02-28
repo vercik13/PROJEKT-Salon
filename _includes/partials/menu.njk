@@ -1,0 +1,18 @@
+ <nav class="menu">
+    <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+
+      <label for="menu-checkbox" class="menu__togler"><strong>☰</strong></label>
+        <ul class="menu__list">
+          <li class="menu__item {{ 'menu__item--active' if page.fileSlug === '' }}"><a href="/" class="menu__link">Úvod</a></li>
+
+          <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'aktuality' }}"><a href="/aktuality/" class="menu__link">Aktuality</a></li>
+
+          <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'kosmetika' }}"><a href="/kosmetika/" class="menu__link">Kosmetika</a></li>
+
+          <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'fotogalerie' }}"><a href="/fotogalerie/" class="menu__link">Fotogalerie</a></li>
+
+          <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'cenik' }}"><a href="/cenik/" class="menu__link">Ceník</a></li>
+
+          <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'kontakt' }}"><a href="/kontakt/" class="menu__link">Kontakt</a></li>
+        </ul>
+ </nav>

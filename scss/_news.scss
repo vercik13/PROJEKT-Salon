@@ -1,0 +1,20 @@
+@use "global";
+
+.clanek {
+  display: block;
+  margin: 4rem auto;
+  padding: 2rem;
+  box-shadow: 5px 10px 18px #5c5c5c;
+  width: 90%;
+}
+
+.clanek img {
+  display: flex;
+  justify-items: center;
+  max-width: 200px;
+  width: 100%;
+}
+
+/*  Aktuality */
+@media screen and (min-width: 1040px) {
+}

@@ -1,9 +1,55 @@
 ---
-layout: sablona.njk
+layout: /layouts/sablona.njk
 ---
 
-<p class="main__text">Ošetření s přípravky značky LARENS – moderní anti-aging kosmeceutika. LARENS je moderní švýcarská specializovaná značka kosmeceutik orientovaných na boj proti stárnutí a kožním problémům.
+<section class="slider">
+  <h2>Kosmetika Jihlava</h2>
+  <h3>Profesionální ošetření pleti</h3>
+</section>
+<section class="about">
+  <div class="about__box">
+    <p class="about__text">
+      Ahoj, vítám tě na svých webových stránkách a zároveň bych ti ráda řekla
+      něco o sobě. Jmenuji se Pavlína a ráda pomáhám s problémy s pletí.
+      Nejdříve to byl jen koníček, poté co jsem se starala o pleť rodině a
+      kamarádkám, jsem se rozhodla, otevřít si svůj vlastní salón. Pracuji s
+      kosmoceutikou Larens. Připravky jsou dělané z rybích peptidů lisované za
+      studena, tím mají větší účinky. Kosmoceutika Larens, původ
+      Polsko-Švycarsko, se zabývá péčí o pleť, zejména na boj proti příznakům
+      stárnutí a kožních problémů.
+    </p>
+    <div class="about__box__profil">
+      <img class="about__profil" src="/images/profil.jpg" alt="osobní foto" />
 
-Jako první na světě přináší v produktech Larens Liposomal Collagen Complex – světově unikátní peptidy rybího kolagenu uzavřené v liposomech s postupným uvolňováním. Bez konzervačních látek, parabenů, emulgátorů.
-</p>
-<img class="main__product"src="/images/larensproduct2.png" alt="produkty larens">
+      <p class="about__text__secondary">Těším se na setkání s Vámi :-)</p>
+
+      <button class="button">Kontaktujte mě</button>
+
+      <p class="certificate">Certifikace</p>
+      <img
+        class="certificate__photo"
+        src="/images/certificate.png"
+        alt="certifikát"
+      />
+    </div>
+  </div>
+</section>
+
+<div class="main__box__news">
+  <aside class="aside">
+    <h2>Novinky</h2>
+    {% for post in collections.aktuality | reverse | limit(3) %}
+
+    <div class="clanek">
+      <img src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
+
+      <div class="clanek__popis">
+        <h2>{{ post.data.title }}</h2>
+        <p>{{ post.data.perex }}</p>
+        <p><a href="{{ post.url }}">Více informací...</a></p>
+      </div>
+    </div>
+
+    {% endfor %}
+  </aside>
+</div>

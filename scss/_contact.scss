@@ -1,0 +1,60 @@
+@use "global";
+
+/* Kontakt */
+.contact {
+  margin: 30px 20px;
+
+  &__map {
+    display: flex;
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .button {
+    border: none;
+    padding: 0;
+    margin: 0 10px;
+    border-radius: 15px;
+    box-shadow: none;
+    background-color: white;
+  }
+  &__button {
+    margin: 20px auto;
+    display: flex;
+    justify-content: left;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  /* Kontakt */
+  .contact {
+    display: flex;
+
+    &__box,
+    &__map {
+      flex-basis: 50%;
+    }
+
+    &__map {
+      max-width: 500px;
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__address,
+    &__button {
+      flex-basis: 50%;
+    }
+
+    &__button {
+      height: 70px;
+      max-height: 10%;
+      margin: 0;
+      justify-content: flex-start;
+      flex-shrink: 1;
+    }
+  }
+}
