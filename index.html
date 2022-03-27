@@ -43,9 +43,9 @@ layout: /layouts/sablona.njk
     <div class="clanek">
       <img src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
 
-      <div class="clanek__popis">
-        <h2>{{ post.data.title }}</h2>
-        <p>{{ post.data.perex }}</p>
+      <div class="clanek__description">
+        <h2 class="clanek__name">{{ post.data.title }}</h2>
+        <p class="clanek__description">{{ post.data.perex }}</p>
         <p><a href="{{ post.url }}">Více informací...</a></p>
       </div>
     </div>

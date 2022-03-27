@@ -68,10 +68,9 @@
 /* Úvod */
 
 .slider {
-  min-height: 50vh;
+  min-height: 100vh;
   width: 100%;
-  background: linear-gradient(rgba(109, 108, 108, 0.5), transparent),
-    url("/images/salon.jpg");
+  background: url("/images/salon.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -124,9 +123,34 @@
   width: 80px;
   margin: 5px auto 100px auto;
 }
-.aside h2 {
-  text-align: center;
+
+.clanek {
+  border: 1px solid #dcd7d0;
+  display: flex;
+  flex-direction: column;
 }
+
+.clanek__image {
+  display: block;
+  max-width: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.clanek__content {
+  flex: 1;
+  padding: 20px;
+  background: #fffffc;
+}
+
+.clanek__name {
+  margin: 0 0 20px 0;
+}
+
+.clanek__description {
+  font-size: 15px;
+}
+
 .footer__copyright {
   display: block;
   background-color: rgb(19, 110, 83);
@@ -153,14 +177,13 @@
     display: none;
   }
 
-  /* .menu__list {
+  .menu__list {
     display: flex !important;
     justify-content: space-between;
     margin: 0;
     padding: 0;
     background-color: white;
   }
-
   .menu__item {
     border-bottom: 0;
   }
@@ -168,10 +191,9 @@
     padding: 20px 50px;
     background-color: white;
   }
-
   /* Uvod */
 
-  /*.main__box {
+  .main__box {
     padding: 40px;
     display: flex;
   }
@@ -180,12 +202,10 @@
     text-align: center;
     max-width: 50%;
   }
-
   .main__product {
     padding: 0;
     margin: 0 auto;
     width: 100%;
     max-width: 600px;
   }
-*/
 }
