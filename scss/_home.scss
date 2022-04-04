@@ -1,5 +1,6 @@
 @use "global";
 
+
 /*
 .header__photo {
   display: flex;
@@ -66,11 +67,27 @@
 
 /*odsud nahoru hlavička - šablona*/
 /* Úvod */
-
-.slider {
-  min-height: 100vh;
-  width: 100%;
+.glide {
+  height: 500px;
+}
+.site1 {
   background: url("/images/salon.jpg");
+}
+
+.site2 {
+  background: url("/images/larensproduct2.png");
+  
+}
+
+.site3 {
+  background: url("/images/poukazy-slider.jpg");
+}
+
+.site1,
+.site2, 
+.site3 {
+  height: 500px;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -81,6 +98,22 @@
   align-items: center;
   text-align: center;
 }
+
+.site2 {
+  color: black;
+
+  h2 {
+    border: 1px solid grey;
+    padding: 20px;
+  }
+}
+
+
+
+
+/*.glide img {
+  width: 100%;
+}*/
 
 .about {
   display: block;
@@ -170,9 +203,9 @@
     display: flex;
     margin: 0;
   }*/
-  .slider {
+ /* .slider {
     height: 300px;
-  }
+  }*/
   .menu__togler {
     display: none;
   }

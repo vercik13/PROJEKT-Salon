@@ -19,6 +19,9 @@
   <!-- Naše vlastní CSS -->
   
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/glide.core.css">
+  <link rel="stylesheet" href="/css/glide.theme.css">
+  
 </head>
 
 <body>
@@ -35,6 +38,20 @@
 
   {% include "partials/footer.njk" %}
 
-  <script src="/fslightbox.js"></script>  
+  <script src="/fslightbox.js"></script>
+
+
+  <script src="glide.min.js"></script>
+  <script>
+    const config = {
+      autoplay: 5000,
+      hoverpause: false,
+      type: 'carousel'
+    }
+  new Glide('.glide', config).mount()
+</script>
+  
+ 
+    
 </body>
 </html>

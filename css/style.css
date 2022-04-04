@@ -7,45 +7,46 @@
   box-sizing: inherit;
 }
 
-html {
+/*html {
   font-size: 62.5%;
-  --header1: calc(2.4rem + 1vw);
-  --header2: calc(2rem + 1vw);
-  --header3: calc(1.8rem + 1vw);
-  --header4: calc(1.5rem + 1vw);
-  --text: calc(1.4rem + 1vw);
+  --header1: calc(2rem + 1vw);
+  --header2: calc(1.7rem + 1vw);
+  --header3: calc(1.2rem + 1vw);
+  --header4: calc(1rem + 1vw);
+  --text: calc(0.5rem + 1vw);
   scroll-behavior: smooth;
 }
 
-/*  */
+
+
+
 h1 {
   font-size: var(--header1);
 }
-
 li,
 a {
   font-size: 18px;
+}*/
+h2 {
+  font-size: 26px;
 }
 
 label,
 input,
 p {
-  font-size: var(--text);
+  font-size: 16px;
 }
 
-h2 {
+/*h2 {
   font-size: var(--header2);
 }
-
 h3 {
   font-size: var(--header3);
 }
-
 h4,
 h5 {
   font-size: var(--header4);
-}
-
+}*/
 ul {
   list-style: none;
 }
@@ -119,7 +120,7 @@ h1 {
 }
 
 .menu__item--active .menu__link {
-  background-color: #757575;
+  background-color: rgb(117, 117, 117);
   color: white;
 }
 
@@ -135,10 +136,27 @@ h1 {
 
 /*odsud nahoru hlavička - šablona*/
 /* Úvod */
-.slider {
-  min-height: 100vh;
-  width: 100%;
+.glide {
+  height: 500px;
+}
+
+.site1 {
   background: url("/images/salon.jpg");
+}
+
+.site2 {
+  background: url("/images/larensproduct2.png");
+}
+
+.site3 {
+  background: url("/images/poukazy-slider.jpg");
+}
+
+.site1,
+.site2,
+.site3 {
+  height: 500px;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -150,6 +168,17 @@ h1 {
   text-align: center;
 }
 
+.site2 {
+  color: black;
+}
+.site2 h2 {
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+/*.glide img {
+  width: 100%;
+}*/
 .about {
   display: block;
   width: 90%;
@@ -174,7 +203,7 @@ h1 {
   display: block;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: #136e53;
+  background-color: rgb(19, 110, 83);
   color: white;
   border: none;
   border-radius: 30px;
@@ -222,7 +251,7 @@ h1 {
 
 .footer__copyright {
   display: block;
-  background-color: #136e53;
+  background-color: rgb(19, 110, 83);
   color: white;
   margin-top: 100px;
   padding: 10px;
@@ -239,10 +268,9 @@ h1 {
     display: flex;
     margin: 0;
   }*/
-  .slider {
-    height: 300px;
-  }
-
+  /* .slider {
+     height: 300px;
+   }*/
   .menu__togler {
     display: none;
   }
@@ -371,36 +399,35 @@ h1 {
     order: 2;
   }
 }
-.main__galery {
-  display: block;
-  max-width: 100%;
-  width: 400px;
+.container {
+  display: inline-block;
   margin: 0 auto;
   border: 1px solid #ece2df;
 }
 
 @media screen and (min-width: 1040px) {
   /* Fotogalerie */
+  /* .container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(6, 400px);
+     gap: 2px;
+   }
+
+  /* .main__galery img {
+     width: 300px;
+     width: 100%;
+     height: 100%;
+     -o-object-fit: cover;
+     object-fit: cover;
+   }*/
   .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 400px);
-    gap: 2px;
-  }
-
-  .main__galery img {
-    width: 300px;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
+    margin: 0 auto;
   }
-
-  /*.container {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    */
 }
 /* Ceník */
 .list {
