@@ -1,6 +1,6 @@
 @use "global";
 
-.clanek {
+/*.clanek {
   border: 1px solid #dcd7d0;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
 
 .clanek__image {
   display: block;
-  max-width: 250px;
+  max-width: 500px;
   width: 100%;
   object-fit: cover;
 }

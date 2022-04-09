@@ -2,7 +2,7 @@
 layout: layouts/aktuality.njk
 title: Galvanický lift
 perex: Hloubkový lifting včetně masáže, (mezoterapie) + Ultrazvuk + Radiofrekvence s led fotony, microprody, galvanický lift, vibrace.
-foto: osetreni.jpg
+foto: zehlicka.jpg
 alt: galvanický lift
 tags: aktuality
 ---

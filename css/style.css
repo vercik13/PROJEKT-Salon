@@ -29,6 +29,7 @@ a {
 }*/
 h2 {
   font-size: 26px;
+  text-align: center;
 }
 
 label,
@@ -57,104 +58,86 @@ a {
 }
 
 body {
+  margin: 0;
   font-family: "Open sans", serif;
   -webkit-animation: opening 1s ease-in-out forwards;
           animation: opening 1s ease-in-out forwards;
+  background-color: rgb(177, 177, 177);
 }
 
 h1 {
   font-family: "Open sans", cursive;
 }
 
-/*
-.header__photo {
-  display: flex;
-  max-height: 50rem;
-  width: 100%;
-  background-size: cover;
-}
-.projekt {
-  width: 90%;
-  margin: 0 auto;
+.header {
+  margin: 0;
   background-color: white;
-}*/
-.header__logo {
+  box-shadow: 0px 5px 5px rgba(82, 82, 82, 0.5);
+  z-index: 2;
+}
+
+.logo {
   display: flex;
-  margin: 0 auto;
-  max-width: 20rem;
+  margin: 1rem auto;
+  max-width: 12rem;
   width: 100%;
 }
 
 .menu {
   box-shadow: 0px 5px 5px rgba(82, 82, 82, 0.5);
 }
-
 .menu__checkbox {
   position: absolute;
   left: -9999px;
   /*display: none*/
 }
-
 .menu__togler {
   cursor: pointer;
 }
-
 .menu__list {
   display: none;
   margin: 0;
   padding: 0;
   list-style: none;
   color: black;
-  background-color: #d4d4d4;
+  background-color: #ededed;
 }
-
 .menu__item {
   border-bottom: 1px solid white;
 }
-
 .menu__link {
   display: block;
   padding: 15px;
   text-decoration: none;
   color: black;
 }
-
 .menu__item--active .menu__link {
-  background-color: rgb(117, 117, 117);
-  color: white;
-}
-
-.menu__link:hover,
-.menu__link:focus {
   background-color: #a3a3a3;
   color: white;
 }
-
+.menu__link:hover, .menu__link:focus {
+  background-color: #a3a3a3;
+  color: white;
+}
 .menu__checkbox:checked ~ .menu__list {
   display: block;
 }
 
 /*odsud nahoru hlavička - šablona*/
-/* Úvod */
+/* SECTION SLIDER */
 .glide {
   height: 500px;
 }
-
-.site1 {
+.glide__site1 {
   background: url("/images/salon.jpg");
 }
-
-.site2 {
+.glide__site2 {
   background: url("/images/larensproduct2.png");
 }
-
-.site3 {
+.glide__site3 {
   background: url("/images/poukazy-slider.jpg");
 }
-
-.site1,
-.site2,
-.site3 {
+.glide__site1, .glide__site2, .glide__site3 {
   height: 500px;
   width: 100%;
   background-repeat: no-repeat;
@@ -167,114 +150,148 @@ h1 {
   align-items: center;
   text-align: center;
 }
-
-.site2 {
-  color: black;
+.glide__site2--box h2 {
+  color: rgb(43, 43, 43);
+  background: linear-gradient(#4b4b4d, #202020);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.site2 h2 {
-  border: 1px solid grey;
-  padding: 20px;
+.glide__site3 h2 {
+  background: rgba(19, 28, 39, 0.8);
+  padding: 2rem;
 }
 
-/*.glide img {
-  width: 100%;
-}*/
-.about {
+/* SECTION ABOUT */
+.about,
+.aside {
   display: block;
-  width: 90%;
-  margin: auto;
+  max-width: 80%;
+  margin: 2rem auto;
   text-align: center;
 }
-
-.about__text {
-  text-align: center;
-  padding: 10px;
+.about__text,
+.aside__text {
+  display: flex;
 }
-
-.about__profil {
+.about__profil--photo,
+.aside__profil--photo {
   display: flex;
   margin: 2rem auto;
-  max-width: 300px;
+  max-width: 15rem;
   width: 100%;
   border-radius: 50%;
 }
-
-.button {
-  display: block;
+.about__button,
+.aside__button {
   margin: 2rem auto;
-  padding: 2rem;
-  background-color: rgb(19, 110, 83);
-  color: white;
+  padding: 1rem;
+  background-color: rgb(68, 184, 172);
   border: none;
-  border-radius: 30px;
+  border-radius: 20px;
   box-shadow: #a3a3a3;
   cursor: pointer;
 }
+.about__certificate--photo,
+.aside__certificate--photo {
+  width: 80px;
+  margin: 1rem auto 5rem auto;
+}
 
-.certificate {
+/* SECTION NEWS */
+/*.aside {
+  display: block;
+  max-width: 400px;
+  margin: 10px auto;
+}*/
+.aside__wrapper h2 {
   text-align: center;
 }
 
-.certificate__photo {
-  display: block;
-  width: 80px;
-  margin: 5px auto 100px auto;
-}
-
 .clanek {
-  border: 1px solid #dcd7d0;
-  display: flex;
-  flex-direction: column;
-}
-
-.clanek__image {
-  display: block;
-  max-width: 250px;
+  display: inline-block;
+  max-width: 300px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  margin: 30px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(199, 197, 197);
 }
-
+.clanek__image {
+  width: 100%;
+}
 .clanek__content {
-  flex: 1;
-  padding: 20px;
-  background: #fffffc;
+  margin: 20px;
 }
-
 .clanek__name {
-  margin: 0 0 20px 0;
+  text-align: center;
 }
-
 .clanek__description {
   font-size: 15px;
+  padding: 10px;
+}
+.clanek a {
+  padding: 10px;
+  color: rgb(50, 144, 151);
+}
+
+/* SECTION FOOTER */
+.contact {
+  max-height: 90vh;
+  padding: 2rem;
+  background-image: url("/images/salon-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.contact a {
+  color: white;
+}
+.contact__box {
+  padding: 10px;
+}
+.contact__button {
+  margin-top: 1rem;
+  display: flex;
+}
+.contact__facebook {
+  margin-right: 1rem;
+}
+.contact__map {
+  display: flex;
 }
 
 .footer__copyright {
-  display: block;
-  background-color: rgb(19, 110, 83);
+  background-color: rgb(60, 60, 60);
   color: white;
-  margin-top: 100px;
   padding: 10px;
   text-align: center;
 }
 
 @media screen and (min-width: 1040px) {
-  /* .header {
+  .header {
     display: flex;
-    justify-content: space-between;
-    padding: 30px 150px;
+    justify-content: space-evenly;
+    padding: 2rem auto;
+    width: 100%;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
   }
   .header__logo {
     display: flex;
-    margin: 0;
-  }*/
-  /* .slider {
-     height: 300px;
-   }*/
+  }
+
+  .menu {
+    box-shadow: none;
+    margin-top: 3rem;
+    text-align: center;
+    /* test button*/
+  }
   .menu__togler {
     display: none;
   }
-
   .menu__list {
     display: flex !important;
     justify-content: space-between;
@@ -282,36 +299,97 @@ h1 {
     padding: 0;
     background-color: white;
   }
-
-  .menu__item {
-    border-bottom: 0;
-  }
-
   .menu__link {
     padding: 20px 50px;
     background-color: white;
   }
+  .menu__item--active .menu__link {
+    background-color: white;
+    color: rgb(120, 187, 183);
+  }
+  .menu__link:hover, .menu__link:focus {
+    background-color: white;
+    color: rgb(120, 187, 183);
+  }
+  .menu__item {
+    position: relative;
+    border: 0;
+    outline: none;
+    width: 10rem;
+    margin-bottom: 2rem;
+  }
+  .menu__item::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 0.175rem;
+    background: rgb(68, 184, 172);
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+  }
+  .menu__item:hover::after, .menu__item:active::after {
+    transform: scale(1, 1);
+    color: rgb(68, 184, 172);
+  }
 
+  /* test button*/
   /* Uvod */
-  .main__box {
-    padding: 40px;
+  .about {
+    background-color: white;
+    display: flex;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .about__box {
+    padding: 8rem 0 2rem 5rem;
+    flex: 1 1 50%;
+    text-align: center;
+  }
+  .about__text {
     display: flex;
   }
-
-  .main__text {
-    padding: 60px;
-    text-align: center;
-    max-width: 50%;
+  .about__profil {
+    display: inline-block;
+    flex: 1 1 50%;
+    margin: 0;
+    padding: 0;
   }
 
-  .main__product {
-    padding: 0;
+  .aside__wrapper {
+    background-color: white;
+    text-align: center;
+    width: 70%;
     margin: 0 auto;
-    width: 100%;
-    max-width: 600px;
+  }
+
+  .aside {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .clanek {
+    display: flex;
+    max-width: 90%;
+  }
+  .clanek__image {
+    max-width: 250px;
+  }
+
+  .contact {
+    padding: 2rem auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contact__box {
+    background: rgba(19, 28, 39, 0.8);
+    padding: 2rem;
   }
 }
-.clanek {
+/*.clanek {
   border: 1px solid #dcd7d0;
   display: flex;
   flex-direction: column;
@@ -319,10 +397,9 @@ h1 {
 
 .clanek__image {
   display: block;
-  max-width: 250px;
+  max-width: 500px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .clanek__content {
@@ -341,10 +418,10 @@ h1 {
 
 /*  Aktuality */
 .services {
-  padding: 0 20px;
-  margin: 60px auto 30px auto;
-  width: 100%;
-  max-width: 600px;
+  background-color: white;
+  padding: 2rem 3rem;
+  margin: 0 auto;
+  width: 70%;
   text-align: center;
 }
 .services li {
@@ -365,7 +442,7 @@ h1 {
   .services {
     max-width: 1100px;
     padding: 50px;
-    margin: 0;
+    margin: 0 auto;
     text-align: left;
   }
   .services h2,
@@ -431,6 +508,7 @@ h1 {
 }
 /* Ceník */
 .list {
+  background-color: white;
   padding: 20px 20px;
   max-width: 550px;
   margin: 0 auto;
@@ -474,15 +552,15 @@ h1 {
     max-width: 100%;
     padding-bottom: 20px;
   }*/
-.contact__button {
+/*.contact__button {
   display: flex;
 }
-
 .button__facebook,
 .button__instagram {
   padding: 0;
 }
 
+//@media screen and (min-width: 1040px) {
 /* Kontakt */
 /*.contact {
     display: flex;

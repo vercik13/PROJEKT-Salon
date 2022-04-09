@@ -1,244 +1,390 @@
 @use "global";
 
-
-/*
-.header__photo {
-  display: flex;
-  max-height: 50rem;
-  width: 100%;
-  background-size: cover;
-}
-.projekt {
-  width: 90%;
-  margin: 0 auto;
-  background-color: white;
-}*/
-
 .header {
-  &__logo {
-    display: flex;
-    margin: 0 auto;
-    max-width: 20rem;
-    width: 100%;
-  }
-}
-.menu {
-  box-shadow: 0px 5px 5px rgba(82, 82, 82, 0.5);
-}
-
-.menu__checkbox {
-  position: absolute;
-  left: -9999px;
-  /*display: none*/
-}
-.menu__togler {
-  cursor: pointer;
-}
-.menu__list {
-  display: none;
   margin: 0;
-  padding: 0;
-  list-style: none;
-  color: black;
-  background-color: #d4d4d4;
-}
-.menu__item {
-  border-bottom: 1px solid white;
-}
-.menu__link {
-  display: block;
-  padding: 15px;
-  text-decoration: none;
-  color: black;
-}
-
-.menu__item--active .menu__link {
-  background-color: rgb(117, 117, 117);
-  color: white;
-}
-.menu__link:hover,
-.menu__link:focus {
-  background-color: #a3a3a3;
-  color: white;
-}
-.menu__checkbox:checked ~ .menu__list {
-  display: block;
-}
-
-/*odsud nahoru hlavička - šablona*/
-/* Úvod */
-.glide {
-  height: 500px;
-}
-.site1 {
-  background: url("/images/salon.jpg");
-}
-
-.site2 {
-  background: url("/images/larensproduct2.png");
+  background-color: white;
+  box-shadow: 0px 5px 5px rgba(82, 82, 82, 0.5);
+  z-index: 2;
   
 }
-
-.site3 {
-  background: url("/images/poukazy-slider.jpg");
+.logo {
+    display: flex;
+    margin: 1rem auto;
+    max-width: 12rem;
+    width: 100%;
 }
 
-.site1,
-.site2, 
-.site3 {
+.menu {
+  box-shadow: 0px 5px 5px rgba(82, 82, 82, 0.5);
+
+  &__checkbox {
+    position: absolute;
+    left: -9999px;
+    /*display: none*/
+  }
+  &__togler {
+    cursor: pointer;
+  }
+  &__list {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: black;
+    background-color: #ededed;
+  }
+  &__item {
+    border-bottom: 1px solid white;
+  }
+  &__link {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+  }
+
+  &__item--active 
+  &__link {
+    background-color: #a3a3a3;
+    color: white;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: #a3a3a3;
+    color: white;
+  }
+
+
+  &__checkbox:checked ~ &__list {
+    display: block;
+  }
+}
+
+
+/*odsud nahoru hlavička - šablona*/
+/* SECTION SLIDER */
+.glide {
   height: 500px;
+
+  &__site1 {
+    background: url("/images/salon.jpg");
+  }
+
+  &__site2 {
+    background: url("/images/larensproduct2.png");
+    
+  }
+
+  &__site3 {
+    background: url("/images/poukazy-slider.jpg");
+  }
+
+  &__site1,
+  &__site2, 
+  &__site3 {
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+ 
+  &__site2--box h2 {
+    color: rgb(43, 43, 43);
+    background: linear-gradient(#4b4b4d, #202020); 
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
+  &__site3 h2 {
+    background: rgba(19, 28, 39, 0.8);
+    padding: 2rem;
+  }
+}
+
+/* SECTION ABOUT */
+
+.about,
+.aside {
+  display: block;
+  max-width: 80%;
+  margin: 2rem auto;
+  text-align: center;
+  
+  &__text {
+    display: flex;
+  }
+
+  &__profil--photo {
+    display: flex;
+    margin: 2rem auto;
+    max-width: 15rem;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  &__button {
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: rgb(68, 184, 172);
+    border: none;
+    border-radius: 20px;
+    box-shadow: #a3a3a3;
+    cursor: pointer;
+  }
+
+  &__certificate--photo {
+    width: 80px;
+    margin: 1rem auto 5rem auto;
+  }
+
+}
+/* SECTION NEWS */
+/*.aside {
+  display: block;
+  max-width: 400px;
+  margin: 10px auto;
+}*/
+.aside__wrapper h2 {
+    text-align: center;
+  }
+
+
+
+.clanek {
+  display: inline-block;
+ // display: grid;
+  //grid-template-columns: 250px 1fr;
+  //gap: 30px;
+  max-width: 300px;
   width: 100%;
+  margin: 30px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(199, 197, 197);
+
+  &__image {
+    width: 100%;
+  }
+
+  &__content {
+    margin: 20px;
+  }
+
+  &__name {
+    text-align: center;
+  }
+
+  &__description {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  a {
+    padding: 10px;
+    color: rgb(50, 144, 151);
+  }
+}
+
+/* SECTION FOOTER */ 
+.contact {
+  max-height: 90vh;
+  padding: 2rem;
+  background-image: url("/images/salon-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.site2 {
-  color: black;
+  a {
+    color: white;
+  }
+  
+  &__box {
+    padding: 10px;
+  }
 
-  h2 {
-    border: 1px solid grey;
-    padding: 20px;
+  &__button {
+    margin-top: 1rem;
+    display: flex;
+  }
+
+  &__facebook {
+    margin-right: 1rem;
+  }
+
+  &__map {
+    display: flex;
   }
 }
 
-
-
-
-/*.glide img {
-  width: 100%;
-}*/
-
-.about {
-  display: block;
-  width: 90%;
-  margin: auto;
-  text-align: center;
-}
-
-.about__text {
-  text-align: center;
-  padding: 10px;
-}
-
-.about__profil {
-  display: flex;
-  margin: 2rem auto;
-  max-width: 300px;
-  width: 100%;
-  border-radius: 50%;
-}
-
-.button {
-  display: block;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: rgb(19, 110, 83);
-  color: white;
-  border: none;
-  border-radius: 30px;
-  box-shadow: #a3a3a3;
-  cursor: pointer;
-}
-
-.certificate {
-  text-align: center;
-}
-
-.certificate__photo {
-  display: block;
-  width: 80px;
-  margin: 5px auto 100px auto;
-}
-
-.clanek {
-  border: 1px solid #dcd7d0;
-  display: flex;
-  flex-direction: column;
-}
-
-.clanek__image {
-  display: block;
-  max-width: 250px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.clanek__content {
-  flex: 1;
-  padding: 20px;
-  background: #fffffc;
-}
-
-.clanek__name {
-  margin: 0 0 20px 0;
-}
-
-.clanek__description {
-  font-size: 15px;
-}
-
 .footer__copyright {
-  display: block;
-  background-color: rgb(19, 110, 83);
+  background-color: rgb(60, 60, 60);
   color: white;
-  margin-top: 100px;
   padding: 10px;
   text-align: center;
 }
 
 @media screen and (min-width: 1040px) {
-  /* .header {
+
+  
+  .header {
     display: flex;
-    justify-content: space-between;
-    padding: 30px 150px;
-  }
-  .header__logo {
+    justify-content: space-evenly;
+    padding: 2rem auto;
+    width: 100%;
+    background-color: white;
+    
+    position: sticky;
+    top: 0px;
+    
+
+  &__logo {
     display: flex;
-    margin: 0;
-  }*/
- /* .slider {
-    height: 300px;
-  }*/
-  .menu__togler {
+  } 
+}
+  .menu {
+    box-shadow: none;
+    margin-top: 3rem;
+    text-align: center;
+    
+  
+  &__togler {
     display: none;
   }
 
-  .menu__list {
+  &__list {
     display: flex !important;
     justify-content: space-between;
     margin: 0;
     padding: 0;
     background-color: white;
+    
   }
-  .menu__item {
-    border-bottom: 0;
-  }
-  .menu__link {
+
+  &__link {
     padding: 20px 50px;
     background-color: white;
+    
   }
+
+  &__item--active 
+  &__link {
+    background-color: white;
+    color: rgb(120, 187, 183);
+    
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: white;
+    color: rgb(120, 187, 183);
+  }
+
+  /* test button*/
+
+    &__item {
+        position: relative;
+        border: 0;
+        outline: none;
+        width: 10rem;
+        margin-bottom: 2rem;
+        
+      }
+
+    &__item::after {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        height: 0.175rem;
+        
+        background: rgb(68, 184, 172);
+        
+        transform: scale(0, 1);
+        transition: transform 0.3s ease;
+      }
+
+      &__item:hover::after,
+      &__item:active::after
+       {
+        transform: scale(1, 1);
+        color: rgb(68, 184, 172);
+      }
+
+}
+ /* test button*/
+
   /* Uvod */
 
-  .main__box {
-    padding: 40px;
+
+  .about {
+    background-color: white;
     display: flex;
-  }
-  .main__text {
-    padding: 60px;
     text-align: center;
-    max-width: 50%;
-  }
-  .main__product {
-    padding: 0;
+    width: 70%;
+    
     margin: 0 auto;
-    width: 100%;
-    max-width: 600px;
+    
+    &__box {
+      padding: 8rem 0 2rem 5rem;
+      flex: 1 1 50%;
+      text-align: center;
+    }
+
+    &__text {
+      display: flex;
+    }
+  
+    &__profil {
+      display: inline-block;
+      flex: 1 1 50%;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .aside__wrapper {
+    background-color: white;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .aside {
+    margin: 0 auto;
+    //display: flex;
+    max-width: 90%;
+
+  }
+
+  .clanek {
+    display: flex;
+    max-width: 90%;
+
+    &__image {
+      max-width: 250px;
+    }
+  }
+
+  .contact {
+    
+    padding: 2rem auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contact__box {
+    
+    background: rgba(19, 28, 39, 0.8);
+    padding: 2rem;
   }
 }

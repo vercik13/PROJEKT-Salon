@@ -4,28 +4,28 @@ layout: /layouts/sablona.njk
 
 <section class="slider">
 
-  
-
-
-
   <div class="glide">
 
     <div class="glide__track" data-glide-el="track">
       <ul class="glide__slides">
 
         <li class="glide__slide">
-          <div class="site1">
+          <div class="glide__site1">
             <h2>Kosmetika Jihlava</h2>
             <h3>Profesionální ošetření pleti</h3>
           </div>
         </li>
         <li class="glide__slide">
-          <div class="site2">
-            <h2>Kosmetika Larens</h2>
+          <div class="glide__site2">
+            <div class="glide__site2--box"><a href="/kosmetika/">
+              <div class="glide__site2--odkaz">
+                <h2>Kosmetika Larens</h2>
+              </div></a>
+            </div>
           </div>
         </li>
         <li class="glide__slide">
-          <div class="site3">
+          <div class="glide__site3">
             <h2>Potěšte své blízké dárkovým poukazem</h2>
           </div>
         </li>
@@ -54,37 +54,40 @@ layout: /layouts/sablona.njk
     <p class="about__text">
       Ahoj, vítám tě na svých webových stránkách a zároveň bych ti ráda řekla
       něco o sobě. Jmenuji se Pavlína a ráda pomáhám s problémy s pletí.
-      Nejdříve to byl jen koníček, poté co jsem se starala o pleť rodině a
+      Nejdříve to byl jen koníček, ale poté co jsem se starala o pleť rodině a
       kamarádkám, jsem se rozhodla, otevřít si svůj vlastní salón. Pracuji s
       kosmoceutikou Larens. Připravky jsou dělané z rybích peptidů lisované za
       studena, tím mají větší účinky. Kosmoceutika Larens, původ
       Polsko-Švycarsko, se zabývá péčí o pleť, zejména na boj proti příznakům
       stárnutí a kožních problémů.
     </p>
-    <div class="about__box__profil">
-      <img class="about__profil" src="/images/profil.jpg" alt="osobní foto" />
-
-      <p class="about__text__secondary">Těším se na setkání s Vámi :-)</p>
-
-      <button class="button">Kontaktujte mě</button>
-
-      <p class="certificate">Certifikace</p>
-      <img
-        class="certificate__photo"
-        src="/images/certificate.png"
-        alt="certifikát"
-      />
-    </div>
   </div>
+  <div class="about__profil">
+    <img class="about__profil--photo" src="/images/profil.jpg" alt="osobní foto" />
+
+    <p>Těším se na setkání s Vámi :-)</p>
+
+    <button class="about__button"><a href="/kontakt/">Kontaktujte mě</a></button>
+
+    <p class="about__certificate">Certifikace</p>
+    <img
+      class="about__certificate--photo"
+      src="/images/certificate.png"
+      alt="certifikát"
+    />
+  </div>
+  
 </section>
 
-<div class="main__box__news">
+<div class="aside__wrapper">
+  <h2>Novinky</h2>
   <aside class="aside">
-    <h2>Novinky</h2>
+    
+    
     {% for post in collections.aktuality | reverse | limit(3) %}
 
     <div class="clanek">
-      <img src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
+      <img class="clanek__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
 
       <div class="clanek__description">
         <h2 class="clanek__name">{{ post.data.title }}</h2>
