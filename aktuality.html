@@ -2,19 +2,24 @@
 layout: layouts/sablona.njk
 title: Aktuality
 ---
+<div class="hero">
+  <div class="aside__wrapper">
+    <h2>Aktuality</h2>
+    <aside class="aside">
 
-<h1>Aktuality</h1>
+    {% for post in collections.aktuality | reverse %}
 
-{% for post in collections.aktuality | reverse %}
+      <div class="clanek">
+        <img class="clanek__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
 
-<div class="clanek">
-  <img class="clanek__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
+        <div class="clanek__content">
+          <h2 class="clanek__name">{{ post.data.title }}</h2>
+          <p class="clanek__description">{{ post.data.perex }}</p>
+          <p><a href="{{ post.url }}">Více informací...</a></p>
+        </div>
+      </div>
 
-  <div class="clanek__content">
-    <h2 class="clanek__name">{{ post.data.title }}</h2>
-    <p class="clanek__description">{{ post.data.perex }}</p>
-    <p><a href="{{ post.url }}">Více informací...</a></p>
+    {% endfor %}
+  </aside>
   </div>
 </div>
-
-{% endfor %}

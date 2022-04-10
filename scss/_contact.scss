@@ -15,9 +15,20 @@
 .button__facebook,
 .button__instagram {
   padding: 0;
+}*/
+
+.kontakt__title {
+  padding: 2rem;
 }
 
-//@media screen and (min-width: 1040px) {
+.kontakt {
+  padding: 2rem;
+}
+
+
+@media screen and (min-width: 1040px) {
+
+
 /* Kontakt */
 /*.contact {
     display: flex;
@@ -46,5 +57,13 @@
       max-height: 10%;
       margin: 0;
       justify-content: flex-start;
-      flex-shrink: 1;
-    }*/
+      flex-shrink: 1;*/
+
+  .kontakt {
+    display: flex;
+    padding: 5rem 2rem 12rem 2rem;
+    
+    justify-content: space-between;
+  }
+
+}

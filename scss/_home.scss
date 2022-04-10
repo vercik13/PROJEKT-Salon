@@ -1,10 +1,20 @@
 @use "global";
 
+.hero {
+  width: 90%;
+  background-color: white;
+  margin: 0 auto;
+  
+}
+
 .header {
   margin: 0;
   background-color: white;
   box-shadow: 0px 5px 5px rgba(82, 82, 82, 0.5);
   z-index: 2;
+  position: sticky;
+    top: 0px;
+    
   
 }
 .logo {
@@ -66,6 +76,7 @@
 /* SECTION SLIDER */
 .glide {
   height: 500px;
+  box-shadow: 0px 5px 5px rgba(82, 82, 82, 0.5);
 
   &__site1 {
     background: url("/images/salon.jpg");
@@ -115,8 +126,8 @@
 .about,
 .aside {
   display: block;
-  max-width: 80%;
-  margin: 2rem auto;
+  padding: 2rem;
+  margin: 0 auto;
   text-align: center;
   
   &__text {
@@ -143,7 +154,7 @@
 
   &__certificate--photo {
     width: 80px;
-    margin: 1rem auto 5rem auto;
+    margin: 1rem auto 1rem auto;
   }
 
 }
@@ -154,6 +165,7 @@
   margin: 10px auto;
 }*/
 .aside__wrapper h2 {
+    padding-top: 2rem;
     text-align: center;
   }
 
@@ -166,10 +178,10 @@
   //gap: 30px;
   max-width: 300px;
   width: 100%;
-  margin: 30px;
+  margin: 0 1rem 1rem 0;
   background-color: white;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px 2px rgb(199, 197, 197);
+  border-radius: 2px;
+  box-shadow: 0px 5px 5px rgba(82, 82, 82, 0.5);
 
   &__image {
     width: 100%;
@@ -180,6 +192,7 @@
   }
 
   &__name {
+    width: 100%;
     text-align: center;
   }
 
@@ -326,13 +339,13 @@
 
   /* Uvod */
 
-
+ .hero {
+   width: 70%;
+ }
   .about {
     background-color: white;
     display: flex;
     text-align: center;
-    width: 70%;
-    
     margin: 0 auto;
     
     &__box {
@@ -355,7 +368,6 @@
   .aside__wrapper {
     background-color: white;
     text-align: center;
-    width: 70%;
     margin: 0 auto;
   }
 

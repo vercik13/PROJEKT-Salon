@@ -62,11 +62,17 @@ body {
   font-family: "Open sans", serif;
   -webkit-animation: opening 1s ease-in-out forwards;
           animation: opening 1s ease-in-out forwards;
-  background-color: rgb(177, 177, 177);
+  background-color: #ededed;
 }
 
 h1 {
   font-family: "Open sans", cursive;
+}
+
+.hero {
+  width: 90%;
+  background-color: white;
+  margin: 0 auto;
 }
 
 .header {
@@ -74,6 +80,9 @@ h1 {
   background-color: white;
   box-shadow: 0px 5px 5px rgba(82, 82, 82, 0.5);
   z-index: 2;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
 }
 
 .logo {
@@ -127,6 +136,7 @@ h1 {
 /* SECTION SLIDER */
 .glide {
   height: 500px;
+  box-shadow: 0px 5px 5px rgba(82, 82, 82, 0.5);
 }
 .glide__site1 {
   background: url("/images/salon.jpg");
@@ -165,8 +175,8 @@ h1 {
 .about,
 .aside {
   display: block;
-  max-width: 80%;
-  margin: 2rem auto;
+  padding: 2rem;
+  margin: 0 auto;
   text-align: center;
 }
 .about__text,
@@ -194,7 +204,7 @@ h1 {
 .about__certificate--photo,
 .aside__certificate--photo {
   width: 80px;
-  margin: 1rem auto 5rem auto;
+  margin: 1rem auto 1rem auto;
 }
 
 /* SECTION NEWS */
@@ -204,6 +214,7 @@ h1 {
   margin: 10px auto;
 }*/
 .aside__wrapper h2 {
+  padding-top: 2rem;
   text-align: center;
 }
 
@@ -211,10 +222,10 @@ h1 {
   display: inline-block;
   max-width: 300px;
   width: 100%;
-  margin: 30px;
+  margin: 0 1rem 1rem 0;
   background-color: white;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px 2px rgb(199, 197, 197);
+  border-radius: 2px;
+  box-shadow: 0px 5px 5px rgba(82, 82, 82, 0.5);
 }
 .clanek__image {
   width: 100%;
@@ -223,6 +234,7 @@ h1 {
   margin: 20px;
 }
 .clanek__name {
+  width: 100%;
   text-align: center;
 }
 .clanek__description {
@@ -336,11 +348,14 @@ h1 {
 
   /* test button*/
   /* Uvod */
+  .hero {
+    width: 70%;
+  }
+
   .about {
     background-color: white;
     display: flex;
     text-align: center;
-    width: 70%;
     margin: 0 auto;
   }
   .about__box {
@@ -361,7 +376,6 @@ h1 {
   .aside__wrapper {
     background-color: white;
     text-align: center;
-    width: 70%;
     margin: 0 auto;
   }
 
@@ -389,31 +403,17 @@ h1 {
     padding: 2rem;
   }
 }
-/*.clanek {
-  border: 1px solid #dcd7d0;
-  display: flex;
-  flex-direction: column;
+.main__list {
+  padding: 2rem;
 }
 
-.clanek__image {
-  display: block;
-  max-width: 500px;
+.article__title {
+  padding-top: 2rem;
+}
+
+.article__image {
+  max-width: 300px;
   width: 100%;
-  object-fit: cover;
-}
-
-.clanek__content {
-  flex: 1;
-  padding: 20px;
-  background: #fffffc;
-}
-
-.clanek__name {
-  margin: 0 0 20px 0;
-}
-
-.clanek__description {
-  font-size: 15px;
 }
 
 /*  Aktuality */
@@ -476,10 +476,18 @@ h1 {
     order: 2;
   }
 }
-.container {
+.gallery h2 {
+  padding: 2rem;
+  text-align: center;
+}
+
+/*.container {
   display: inline-block;
+}*/
+.main__photo {
   margin: 0 auto;
-  border: 1px solid #ece2df;
+  display: flex;
+  width: 100%;
 }
 
 @media screen and (min-width: 1040px) {
@@ -501,10 +509,15 @@ h1 {
   .container {
     display: flex;
     flex-wrap: wrap;
-    -o-object-fit: cover;
-       object-fit: cover;
-    margin: 0 auto;
   }
+
+  .main__photo {
+    flex: 1 1 33.3333333333%;
+  }
+
+  /*.main__photo {
+
+  }*/
 }
 /* Ceník */
 .list {
@@ -558,36 +571,48 @@ h1 {
 .button__facebook,
 .button__instagram {
   padding: 0;
+}*/
+.kontakt__title {
+  padding: 2rem;
 }
 
-//@media screen and (min-width: 1040px) {
-/* Kontakt */
-/*.contact {
-    display: flex;
+.kontakt {
+  padding: 2rem;
+}
 
-    &__box,
-    &__map {
-      flex-basis: 50%;
-    }
-
-    &__map {
-      max-width: 500px;
-    }
-
-    &__box {
+@media screen and (min-width: 1040px) {
+  /* Kontakt */
+  /*.contact {
       display: flex;
-      flex-direction: column;
-    }
 
-    &__address,
-    &__button {
-      flex-basis: 50%;
-    }
+      &__box,
+      &__map {
+        flex-basis: 50%;
+      }
 
-    &__button {
-      height: 70px;
-      max-height: 10%;
-      margin: 0;
-      justify-content: flex-start;
-      flex-shrink: 1;
-    }*//*# sourceMappingURL=style.css.map */
+      &__map {
+        max-width: 500px;
+      }
+
+      &__box {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__address,
+      &__button {
+        flex-basis: 50%;
+      }
+
+      &__button {
+        height: 70px;
+        max-height: 10%;
+        margin: 0;
+        justify-content: flex-start;
+        flex-shrink: 1;*/
+  .kontakt {
+    display: flex;
+    padding: 5rem 2rem 12rem 2rem;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=style.css.map */

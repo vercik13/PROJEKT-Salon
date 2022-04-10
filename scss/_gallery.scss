@@ -1,10 +1,19 @@
 @use "global";
 
-.container {
+.gallery h2 {
+  padding: 2rem;
+  text-align: center;
+}
+
+/*.container {
   display: inline-block;
- 
+}*/
+
+.main__photo {
   margin: 0 auto;
-  border: 1px solid #ece2df;
+  display: flex;
+  //max-width: 500px;
+  width: 100%;
 }
 
 @media screen and (min-width: 1040px) {
@@ -27,8 +36,14 @@
   .container {
       display: flex;
       flex-wrap: wrap;
-      object-fit: cover;
-      margin: 0 auto;
+      //margin: 0 auto;
     }
 
-}
+  .main__photo {
+    flex: 1 1 calc(100% / 3);
+  }
+    /*.main__photo {
+      
+    }*/
+
+  }
