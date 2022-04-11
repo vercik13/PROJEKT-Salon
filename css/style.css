@@ -387,6 +387,7 @@ h1 {
   .clanek {
     display: flex;
     max-width: 90%;
+    margin: 0 0 1rem 0;
   }
   .clanek__image {
     max-width: 250px;
