@@ -1,5 +1,5 @@
 ---
-layout: /layouts/aktuality.njk
+layout: layouts/aktuality.njk
 title: Hyaluron Pen
 perex: Zvětšení rtů a výplň vrásek kyselinou hyaluronovou
 foto: hyaluronpen2.jpg
