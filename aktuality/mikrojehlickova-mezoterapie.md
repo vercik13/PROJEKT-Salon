@@ -37,6 +37,7 @@ tělesné partie do velikosti 30 cm x 30 cm (partie na těle je možné kombinov
 Kdy se dostaví výsledky
 
 Běžně vidíte výsledek již po prvním ošetření. Dlouhotrvající a opravdu signifikantní efekt lze očekávat po čtvrtém až šestém ošetření. Vaše pleť se bude zlepšovat i dále po ošetření.
+
 Doporučená péče pro klienta po ošetření
 Následující 2 dny po ošetření
 Nenanášet na ošetřovanou oblast make-up.
@@ -50,9 +51,11 @@ Nevystavovat se sluníčku či soláriu (v případě sluníčka – chránit se
 Neaplikovat Botox, nebo výplňové materiály.
 Neprovádět chemický peeling.
 Pokožku maximálně šetřit a pravidelně hydratovat.
+
 Kontraindikace
 
 Poruchy srážlivosti krve, infekční onemocnění vč. herpes, akutně probíhající onemocnění, onemocnění ovlivňující funkci imunitního systému, diabetes, rosacea, spálená či jinak podrážděná pokožka, známá přecitlivělost na některou ze složek aplikovaných přípravků, mateřská znaménka v místě ošetření, těhotenství, kojení. Ošetření není vhodné pro pleť velmi citlivou, kuperózní či pleť se zánětlivými formami akné.
+
 Upozornění
 
 Pokožka může být po ošetření až 3 dny zarudlá a podrážděná. Po ošetření dochází z hloubkovému peelingovému efektu, a pokožka tak může vytvářet šupinky, což je častým správným projevem tohoto ošetření. Důležité je pleť často hydratovat (promazávat), i několikrát denně.
