@@ -9,6 +9,7 @@ module.exports = function(eleventyConfig) {
  eleventyConfig.addPassthroughCopy("css");
  eleventyConfig.addPassthroughCopy("*.js");
  eleventyConfig.addPassthroughCopy("*.html");
+ eleventyConfig.addPassthroughCopy("*.njk");
 
 
  eleventyConfig.addFilter("limit", function (arr, limit) {
