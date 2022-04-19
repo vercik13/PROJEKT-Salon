@@ -1,7 +1,7 @@
 ---
 layout: layouts/clanek.njk
 title: Mikrojehličková mezoterapie
-perex: Mikrojehličkování je prováděno po znecitlivění pokožky elektrickým mikrojehličkovacím perem, na jehož konci je upevněn jednorázový výměnný nástavec.
+perex: Mikrojehličkování je prováděno po znecitlivění pokožky elektrickým mikrojehličkovacím perem.
 foto: osetreni.jpg
 alt: Mikrojehličková mezoterapie
 tags: aktuality

@@ -1,5 +1,8 @@
 @use "global";
 
+.main__article {
+  padding: 5rem;
+}
 
 .main__list {
   padding: 2rem;
@@ -10,7 +13,7 @@
 }
 
 .article__image {
-  max-width: 300px;
+  max-width: 350px;
   width: 100%;
 }
 
