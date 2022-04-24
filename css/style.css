@@ -27,17 +27,10 @@ li,
 a {
   font-size: 18px;
 }*/
-<<<<<<< HEAD
 html {
   list-style: 1.5px;
 }
 
-h2 {
-  font-size: 26px;
-}
-
-=======
->>>>>>> c4ffd2440abedc899c014d16eb5fcfd2b258f575
 label,
 input,
 p {
@@ -437,7 +430,7 @@ h1 {
 .article__text h3,
 .article__text h4,
 .article__text p {
-  padding: 0.5rem 0;
+  padding: 0.8rem 0 0.5rem 0;
 }
 
 /*  Aktuality */
