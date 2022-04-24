@@ -27,6 +27,7 @@ li,
 a {
   font-size: 18px;
 }*/
+<<<<<<< HEAD
 html {
   list-style: 1.5px;
 }
@@ -35,6 +36,8 @@ h2 {
   font-size: 26px;
 }
 
+=======
+>>>>>>> c4ffd2440abedc899c014d16eb5fcfd2b258f575
 label,
 input,
 p {
@@ -218,7 +221,7 @@ h1 {
 }*/
 .aside__wrapper h2 {
   margin: 0;
-  padding-top: 2rem;
+  padding-top: 0.5rem;
   text-align: center;
 }
 
@@ -230,23 +233,24 @@ h1 {
   background-color: white;
   border-radius: 2px;
   box-shadow: 0px 5px 5px rgba(82, 82, 82, 0.5);
+  /*&__content {
+    margin: 20px;
+  }*/
 }
 .clanek__image {
   width: 100%;
 }
-.clanek__content {
-  margin: 20px;
-}
 .clanek__name {
-  width: 100%;
-  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 .clanek__description {
   font-size: 15px;
-  padding: 10px;
+  padding: 0.5rem;
+  justify-content: center;
 }
 .clanek a {
-  padding: 10px;
+  padding: 1rem;
   color: rgb(50, 144, 151);
 }
 
@@ -395,6 +399,7 @@ h1 {
   }
   .clanek__image {
     max-width: 250px;
+    width: 100%;
   }
 
   .contact {
