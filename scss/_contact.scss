@@ -19,11 +19,14 @@
 
 .kontakt__title {
   padding: 2rem;
+  text-align: center;
 }
 
 .kontakt {
   padding: 2rem;
 }
+
+
 
 
 @media screen and (min-width: 1040px) {
@@ -61,9 +64,8 @@
 
   .kontakt {
     display: flex;
-    padding: 5rem 2rem 12rem 2rem;
-    
-    justify-content: space-between;
+    padding: 5rem 3rem 15rem 3rem;
+   justify-content: space-around;
   }
 
 }
