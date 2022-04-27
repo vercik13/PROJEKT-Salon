@@ -27,23 +27,23 @@ Strie: 10 ošetření 1× za 4–6 týdnů
 
 #### Během 30 minutové procedury je možné ošetřit:
 
-- vybranou obličejovou část (např. celé čelo, tváře nebo oční okolí)
-- krk
-- hřbety rukou
-- tělesné partie do velikosti 10 cm x 10 cm (partie na těle je možné kombinovat, ale výsledná plocha by neměla být větší)
+<li>vybranou obličejovou část (např. celé čelo, tváře nebo oční okolí)</li>
+<li>krk</li>
+<li>hřbety rukou</li>
+<li>tělesné partie do velikosti 10 cm x 10 cm (partie na těle je možné kombinovat, ale výsledná plocha by neměla být větší)</li>
 
 #### Během 60 minutové procedury je možné ošetřit:
 
-- celý obličej
-- krk a dekolt
-- tělesné partie do velikosti 20 cm x 20 cm (partie na těle je možné kombinovat, ale výsledná plocha by neměla být větší)
+<li>celý obličej</li>
+<li>krk a dekolt</li>
+<li>tělesné partie do velikosti 20 cm x 20 cm (partie na těle je možné kombinovat, ale výsledná plocha by neměla být větší)</li>
 
 #### Během 90 minutové procedury je možné ošetřit:
 
-- celý obličej
-- krk
-- dekolt a hřbety rukou
-- tělesné partie do velikosti 30 cm x 30 cm (partie na těle je možné kombinovat, ale výsledná plocha by neměla být větší)
+<li>celý obličej</li>
+<li>krk</li>
+<li>dekolt a hřbety rukou</li>
+<li>tělesné partie do velikosti 30 cm x 30 cm (partie na těle je možné kombinovat, ale výsledná plocha by neměla být větší)</li>
 
 #### Kdy se dostaví výsledky
 
@@ -53,19 +53,19 @@ Běžně vidíte výsledek již po prvním ošetření. Dlouhotrvající a oprav
 
 #### Následující 2 dny po ošetření:
 
-- Nenanášet na ošetřovanou oblast make-up.
-- Nesahat si na ošetřovanou oblast z důvodu zanesení infekce.
-- Nenavštěvovat zakouřené prostory, saunu, páru, bazén a další místa, kde by mohlo dojít k infekci.
-- Vyhýbat se nadměrnému pocení.
-- V den ošetření pokožku neomývat mýdlem a šamponem, pouze čistit odličovacími prostředky.
-- Ke zmírnění reakce po ošetření je možné použít lokální ochlazování (obklady, gelové polštářky – dbát na hygienu).
+<li>Nenanášet na ošetřovanou oblast make-up.</li>
+<li>Nesahat si na ošetřovanou oblast z důvodu zanesení infekce.</li>
+<li>Nenavštěvovat zakouřené prostory, saunu, páru, bazén a další místa, kde by mohlo dojít k infekci.</li>
+<li>Vyhýbat se nadměrnému pocení.</li>
+<li>V den ošetření pokožku neomývat mýdlem a šamponem, pouze čistit odličovacími prostředky.</li>
+<li>Ke zmírnění reakce po ošetření je možné použít lokální ochlazování (obklady, gelové polštářky – dbát na hygienu).</li>
 
 #### Následujících 14 dní po ošetření:
 
-- Nevystavovat se sluníčku či soláriu (v případě sluníčka – chránit se ochranou s vyšším faktorem).
-- Neaplikovat Botox, nebo výplňové materiály.
-- Neprovádět chemický peeling.
-- Pokožku maximálně šetřit a pravidelně hydratovat.
+<li>Nevystavovat se sluníčku či soláriu (v případě sluníčka – chránit se ochranou s vyšším faktorem).</li>
+<li>Neaplikovat Botox, nebo výplňové materiály.</li>
+<li>Neprovádět chemický peeling.</li>
+<li>Pokožku maximálně šetřit a pravidelně hydratovat.</li>
 
 #### Kontraindikace
 

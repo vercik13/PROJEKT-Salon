@@ -1,7 +1,7 @@
 ---
 layout: layouts/clanek.njk
 title: Ultrazvuková špachtle
-perex: Hloubkově čistí pleť, odstraňuje povrchové odumřelé buňky
+perex: Hloubkově čistí pleť, odstraňuje povrchové odumřelé buňky a poskytuje kompletní regeneraci kůže
 foto: spachtle2.jpg
 alt: ultrazvuková špachtle
 tags: aktuality
