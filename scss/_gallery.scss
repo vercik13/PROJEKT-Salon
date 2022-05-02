@@ -14,6 +14,13 @@
   display: flex;
   //max-width: 500px;
   width: 100%;
+  opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.main__photo:hover {
+  opacity: .7;
 }
 
 @media screen and (min-width: 1040px) {

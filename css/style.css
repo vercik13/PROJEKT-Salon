@@ -212,6 +212,10 @@ h1 {
   max-width: 400px;
   margin: 10px auto;
 }*/
+.aside__wrapper {
+  padding: 1rem 0;
+}
+
 .aside__wrapper h2 {
   margin: 0;
   padding-top: 0.5rem;
@@ -220,6 +224,9 @@ h1 {
 
 .clanek {
   display: inline-block;
+  /*display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 30px;*/
   max-width: 300px;
   width: 100%;
   margin-bottom: 1rem;
@@ -376,7 +383,6 @@ h1 {
 
   .aside__wrapper {
     background-color: white;
-    text-align: center;
     margin: 0 auto;
   }
 
@@ -387,6 +393,7 @@ h1 {
 
   .clanek {
     display: flex;
+    flex: 1 1 auto;
     max-width: 80%;
     margin: 1rem auto;
   }
@@ -505,6 +512,12 @@ h1 {
   margin: 0 auto;
   display: flex;
   width: 100%;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.main__photo:hover {
+  opacity: 0.7;
 }
 
 @media screen and (min-width: 1040px) {
@@ -540,11 +553,12 @@ h1 {
 /* Ceník */
 .list {
   background-color: white;
-  padding: 20px 20px;
+  padding: 0 20px;
   max-width: 550px;
   margin: 0 auto;
 }
-.list h1 {
+.list h2 {
+  padding: 2rem;
   text-align: center;
 }
 .list p,
@@ -592,6 +606,7 @@ h1 {
 }*/
 .kontakt__title {
   padding: 2rem;
+  text-align: center;
 }
 
 .kontakt {
@@ -630,7 +645,7 @@ h1 {
         flex-shrink: 1;*/
   .kontakt {
     display: flex;
-    padding: 5rem 2rem 12rem 2rem;
-    justify-content: space-between;
+    padding: 5rem 3rem 15rem 3rem;
+    justify-content: space-around;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -13,12 +13,12 @@ Rty jsou u každého člověka jedinečné, proto když uvažujeme nad jejich zv
 
 #### Čeho můžeme pomocí kyseliny hyaluronové dosáhnout:
 
-- plné rty - objem horního a dolního rtu s přitažlivým otvorem
-- našpulené rty - objem je přidaný do spodního rtu
-- vytvoření oblouku
-- zvýraznění kontury rtů
-- nadzdvihnutí koutků rtů
-- úprava symetrie rtů
-- zjemnění vrásek kolem rtů
+<li>plné rty - objem horního a dolního rtu s přitažlivým otvorem</li>
+<li>našpulené rty - objem je přidaný do spodního rtu</li>
+<li>vytvoření oblouku</li>
+<li>zvýraznění kontury rtů</li>
+<li>nadzdvihnutí koutků rtů</li>
+<li>úprava symetrie rtů</li>
+<li>zjemnění vrásek kolem rtů</li>
 
 Zákrok spočívá ve stříknutí syntetické kyseliny hyaluronové hyaluronovým perem. Toto ošetření provádí pouze proškolená kosmetička. Po vpravení kyseliny perem se vráska vyplní. Zákrok trvá přibližně 30 minut a po něm se může klient vrátit zpět k běžným činnostem.
