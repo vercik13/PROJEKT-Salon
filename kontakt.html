@@ -37,6 +37,30 @@ layout: layouts/sablona.njk
       </div>
     </div>
 
+    <div class="contact__form">
+      <div class="form-wrapper">
+        <header class="form-head">
+          <h3>Kontaktní formulář</h3>
+        </header>
+        <form>
+          <div class="name-form">
+            <label for="name">Jméno:</label>
+            <input type="text" name="name" required />
+          </div>
+          <div class="email-form">
+            <label for="email">Email:</label>
+            <input type="email" required name="email" />
+          </div> 
+          <div class="text-form">
+            <label for="text"></label>
+            <textarea name="message" cols="40" rows="15"></textarea> 
+          </div>  
+           
+          <button type="submit">Odeslat</button>
+        </form>
+      </div>
+    </div>
+
     <div class="contact__map">
       <iframe
         style="border: none"

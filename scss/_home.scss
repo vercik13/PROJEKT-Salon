@@ -247,7 +247,7 @@
 }
 
 .footer__copyright {
-  background-color: rgb(60, 60, 60);
+  background-color: rgba(19, 28, 39, 0.8);
   color: white;
   padding: 10px;
   text-align: center;
@@ -291,13 +291,14 @@
   }
 
   &__link {
-    padding: 20px 50px;
+    padding: auto;
     background-color: white;
     
   }
 
   &__item--active 
   &__link {
+    text-align: center;
     background-color: white;
     color: rgb(120, 187, 183);
     
