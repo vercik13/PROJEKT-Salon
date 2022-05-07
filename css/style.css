@@ -616,18 +616,20 @@ h1 {
 }
 
 .kontakt {
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 .contact__form {
   display: flex;
+  max-width: 50%;
   align-items: center;
 }
 
 .form-wrapper {
-  max-height: 80vh;
-  background: rgba(19, 28, 39, 0.8);
-  color: white;
+  max-height: 100vh;
+  background: url("/images/salon-background9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .form-head {
@@ -636,8 +638,12 @@ h1 {
 }
 
 .name-form,
-.text-form,
 .email-form {
+  padding: 1rem;
+  text-align: left;
+}
+
+.text-form {
   padding: 1rem;
   text-align: center;
 }
@@ -647,11 +653,13 @@ h1 {
 }
 
 .contact__form button {
-  margin: 1rem auto;
+  display: flex;
+  margin: 1rem 1rem 1rem auto;
   padding: 1rem;
   background-color: rgb(68, 184, 172);
   border: none;
   border-radius: 20px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -687,7 +695,11 @@ h1 {
         flex-shrink: 1;*/
   .kontakt {
     display: flex;
-    padding: 5rem 3rem 15rem 3rem;
+    padding: 1rem 2rem;
     justify-content: space-around;
+  }
+
+  .contact__address--site {
+    padding-top: 6rem;
   }
 }/*# sourceMappingURL=style.css.map */

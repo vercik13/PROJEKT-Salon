@@ -9,7 +9,7 @@ layout: layouts/sablona.njk
   <section class="kontakt">
     
     <div class="contact__wrapper">
-      <div class="contact__address">
+      <div class="contact__address--site">
         <p><strong>Pavlína Hintnaus Kloudová</strong></p>
         <p><strong>ičo: </strong>09267191</p>
         <p>Česká 638/8 Residence Kaskáda, 58601 Jihlava - Horní Kosov</p>
@@ -48,18 +48,19 @@ layout: layouts/sablona.njk
             <input type="text" name="name" required />
           </div>
           <div class="email-form">
-            <label for="email">Email:</label>
+            <label for="email">e-mail:</label>
             <input type="email" required name="email" />
           </div> 
           <div class="text-form">
             <label for="text"></label>
-            <textarea name="message" cols="40" rows="15"></textarea> 
+            <textarea name="message" cols="50" rows="10"></textarea> 
           </div>  
            
           <button type="submit">Odeslat</button>
         </form>
       </div>
     </div>
+  </section>
 
     <div class="contact__map">
       <iframe
@@ -70,6 +71,6 @@ layout: layouts/sablona.njk
         frameborder="0"
       ></iframe>
     </div>
-  </section>
+  
 
 </div>
