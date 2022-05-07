@@ -42,21 +42,22 @@ layout: layouts/sablona.njk
         <header class="form-head">
           <h3>Kontaktní formulář</h3>
         </header>
-        <form>
+        <form action="https://formspree.io/f/mbjwqrar"
+        method="POST">
           <div class="name-form">
             <label for="name">Jméno:</label>
             <input type="text" name="name" required />
           </div>
           <div class="email-form">
             <label for="email">e-mail:</label>
-            <input type="email" required name="email" />
+            <input type="email" required name="_replyto" />
           </div> 
           <div class="text-form">
             <label for="text"></label>
             <textarea name="message" cols="50" rows="10"></textarea> 
           </div>  
            
-          <button type="submit">Odeslat</button>
+          <button value="Send" type="submit">Odeslat</button>
         </form>
       </div>
     </div>
