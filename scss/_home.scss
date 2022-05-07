@@ -283,7 +283,6 @@
 
   &__list {
     display: flex !important;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -292,6 +291,7 @@
 
   &__link {
     padding: auto;
+    justify-content: space-evenly;
     background-color: white;
     
   }

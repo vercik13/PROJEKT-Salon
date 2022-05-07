@@ -28,8 +28,7 @@
 
 .contact__form {
   display: flex;
-  max-width: 50%;
-  align-items: center;
+ 
 }
 
 .form-wrapper {
@@ -38,6 +37,9 @@
   background: url('/images/salon-background9.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 300px;
+  width: 100%;
+  align-items: center;
   
 
 }
@@ -49,10 +51,12 @@
 
 .name-form,
 .email-form {
+  display: flex;
   padding: 1rem;
   text-align: left;
 }
 .text-form {
+  display: flex;
   padding: 1rem;
   text-align: center;
 }
@@ -70,6 +74,12 @@
   border-radius: 20px;
   font-size: 1rem;
   cursor: pointer;
+}
+
+.contact__map--site {
+  display: flex;
+  max-height: 80vh;
+  margin: 1rem ;
 }
 
 
@@ -114,6 +124,10 @@
 
   .contact__address--site {
     padding-top: 6rem;
+  }
+
+  .form-wrapper {
+    max-width: 100%;
   }
 
 }

@@ -442,65 +442,6 @@ h1 {
 }
 
 /*  Aktuality */
-.services {
-  background-color: white;
-  padding: 2rem 3rem;
-  margin: 0 auto;
-  width: 70%;
-  text-align: center;
-}
-.services li {
-  text-align: left;
-}
-.services h2,
-.services h3 {
-  margin: 20px 0;
-}
-.services__foto1, .services__foto2 {
-  max-width: 100%;
-  width: 300px;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 1040px) {
-  /* Služby */
-  .services {
-    max-width: 1100px;
-    padding: 50px;
-    margin: 0 auto;
-    text-align: left;
-  }
-  .services h2,
-.services h3 {
-    margin-top: 30px;
-  }
-  .services__box, .services__box--second {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-  }
-  .services__text--primary {
-    max-width: 550px;
-  }
-  .services__text--secondary {
-    margin-top: 50px;
-    max-width: 500px;
-    order: 2;
-  }
-  .services__foto1, .services__foto2 {
-    margin: 0;
-    display: flex;
-    width: 100%;
-    max-width: 400px;
-  }
-  .services__foto1 {
-    margin-top: 50px;
-  }
-  .services__box--second {
-    order: 2;
-  }
-}
 .gallery h2 {
   padding: 2rem;
   text-align: center;
@@ -621,8 +562,6 @@ h1 {
 
 .contact__form {
   display: flex;
-  max-width: 50%;
-  align-items: center;
 }
 
 .form-wrapper {
@@ -630,6 +569,9 @@ h1 {
   background: url("/images/salon-background9.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 300px;
+  width: 100%;
+  align-items: center;
 }
 
 .form-head {
@@ -639,11 +581,13 @@ h1 {
 
 .name-form,
 .email-form {
+  display: flex;
   padding: 1rem;
   text-align: left;
 }
 
 .text-form {
+  display: flex;
   padding: 1rem;
   text-align: center;
 }
@@ -661,6 +605,12 @@ h1 {
   border-radius: 20px;
   font-size: 1rem;
   cursor: pointer;
+}
+
+.contact__map--site {
+  display: flex;
+  max-height: 80vh;
+  margin: 1rem;
 }
 
 @media screen and (min-width: 1040px) {
@@ -701,5 +651,9 @@ h1 {
 
   .contact__address--site {
     padding-top: 6rem;
+  }
+
+  .form-wrapper {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
