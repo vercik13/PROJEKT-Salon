@@ -2,15 +2,15 @@
 
 .hero {
   width: 90%;
-  background-color: white;
+  background-color: $global-color-primary;
   margin: 0 auto;
   
 }
 
 .header {
   margin: 0;
-  background-color: white;
-  box-shadow: 0px 5px 5px rgba(82, 82, 82, 0.5);
+  background-color: $global-color-primary;
+  box-shadow: 0px 5px 5px $Global-color-shadow;
   z-index: 2;
   position: sticky;
     top: 0px;
@@ -25,7 +25,7 @@
 }
 
 .menu {
-  box-shadow: 0px 5px 5px rgba(82, 82, 82, 0.5);
+  box-shadow: 0px 5px 5px $Global-color-shadow;
 
   &__checkbox {
     position: absolute;
@@ -44,7 +44,7 @@
     background-color: #ededed;
   }
   &__item {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $global-color-primary;
   }
   &__link {
     display: block;
@@ -55,15 +55,14 @@
 
   &__item--active 
   &__link {
-    background-color: #a3a3a3;
-    color: white;
+    background-color: $global-color-secondary;
+    color: $global-color-primary;
   }
 
   &__link:hover,
   &__link:focus {
-    background-color: #a3a3a3;
-    color: white;
-  }
+    background-color: $global-color-secondary;
+    color: $global-color-primary;
 
 
   &__checkbox:checked ~ &__list {
@@ -76,7 +75,7 @@
 /* SECTION SLIDER */
 .glide {
   height: 500px;
-  box-shadow: 0px 5px 5px rgba(82, 82, 82, 0.5);
+  box-shadow: 0px 5px 5px $Global-color-shadow;
 
   &__site1 {
     background: url("/images/salon.jpg");
@@ -99,7 +98,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: $global-color-primary;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,7 +115,7 @@
   }
 
   &__site3 h2 {
-    background: rgba(19, 28, 39, 0.8);
+    background: $Global-color-shadow;
     padding: 2rem;
   }
 }
@@ -145,10 +144,9 @@
   &__button {
     margin: 2rem auto;
     padding: 1rem;
-    background-color: rgb(68, 184, 172);
+    background-color: $global-color-third;
     border: none;
     border-radius: 20px;
-    box-shadow: #a3a3a3;
     cursor: pointer;
   }
 
@@ -167,7 +165,9 @@
 
 .aside__wrapper {
   padding: 1rem 0;
+ 
 }
+
 .aside__wrapper h2 {
     margin: 0;
     padding-top: 0.5rem;
@@ -184,7 +184,7 @@
   max-width: 300px;
   width: 100%;
   margin-bottom: 1rem;
-  background-color: white;
+  background-color: $global-color-primary;
   border-radius: 2px;
   box-shadow: 0px 5px 5px rgba(82, 82, 82, 0.5);
 
@@ -210,7 +210,7 @@
 
   a {
     padding: 1rem;
-    color: rgb(50, 144, 151);
+    color: $global-color-third;
   }
 }
 
@@ -222,10 +222,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: white;
+  color: $global-color-primary;
 
   a {
-    color: white;
+    color: $global-color-primary;
   }
   
   &__box {
@@ -247,8 +247,8 @@
 }
 
 .footer__copyright {
-  background-color: rgba(19, 28, 39, 0.8);
-  color: white;
+  background-color: $Global-color-shadow;
+  color: $global-color-primary;
   padding: 10px;
   text-align: center;
 }
@@ -261,8 +261,7 @@
     justify-content: space-evenly;
     padding: 2rem auto;
     width: 100%;
-    background-color: white;
-    
+    background-color: $global-color-primary;
     position: sticky;
     top: 0px;
     
@@ -285,29 +284,29 @@
     display: flex !important;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: $global-color-primary;
     
   }
 
   &__link {
     padding: auto;
     justify-content: space-evenly;
-    background-color: white;
+    background-color: $global-color-primary;
     
   }
 
   &__item--active 
   &__link {
     text-align: center;
-    background-color: white;
-    color: rgb(120, 187, 183);
+    background-color: $global-color-primary;
+    color: $global-color-third;
     
   }
 
   &__link:hover,
   &__link:focus {
-    background-color: white;
-    color: rgb(120, 187, 183);
+    background-color: $global-color-primary;
+    color: $global-color-third;
   }
 
   /* test button*/
@@ -329,7 +328,7 @@
         bottom: 0;
         height: 0.175rem;
         
-        background: rgb(68, 184, 172);
+        background: $global-color-third;
         
         transform: scale(0, 1);
         transition: transform 0.3s ease;
@@ -339,7 +338,7 @@
       &__item:active::after
        {
         transform: scale(1, 1);
-        color: rgb(68, 184, 172);
+        color: $global-color-third;
       }
 
 }
@@ -351,7 +350,7 @@
    width: 65%;
  }
   .about {
-    background-color: white;
+    background-color: $global-color-primary;
     display: flex;
     text-align: center;
     margin: 0 auto;
@@ -374,7 +373,7 @@
     }
   }
   .aside__wrapper {
-    background-color: white;
+    background-color: $global-color-primary;
     margin: 0 auto;
   }
 
@@ -408,7 +407,7 @@
 
   .contact__box {
     
-    background: rgba(19, 28, 39, 0.8);
+    background: $global-color-shadow;
     padding: 2rem;
   }
 }

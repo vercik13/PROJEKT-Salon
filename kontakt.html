@@ -45,16 +45,16 @@ layout: layouts/sablona.njk
         <form action="https://formspree.io/f/mbjwqrar"
         method="POST">
           <div class="name-form">
-            <label for="name">Jméno:</label>
-            <input type="text" name="name" required />
+            <label for="name"></label>
+            <input type="text" name="name" required placeholder="Jméno" />
           </div>
           <div class="email-form">
-            <label for="email">e-mail:</label>
-            <input type="email" required name="_replyto" />
+            <label for="email"></label>
+            <input type="email" required name="_replyto" placeholder="Email"/>
           </div> 
           <div class="text-form">
             <label for="text"></label>
-            <textarea name="message" cols="50" rows="10"></textarea> 
+            <textarea name="message" cols="50" rows="10" placeholder="Zpráva"></textarea> 
           </div>  
            
           <button value="Send" type="submit">Odeslat</button>
@@ -68,6 +68,7 @@ layout: layouts/sablona.njk
       style="border: none"
       src="https://frame.mapy.cz/zakladni?x=15.5503670&y=49.4059924&z=17&source=addr&id=14015666"
       width="100%"
+      
       frameborder="0"
     ></iframe>
   </div>
