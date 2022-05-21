@@ -112,7 +112,7 @@ h1 {
 }
 
 .article__image {
-  max-width: 350px;
+  max-width: 300px;
   width: 100%;
 }
 
@@ -589,9 +589,9 @@ h1 {
 }
 .services {
   background-color: white;
-  padding: 2rem 3rem;
+  padding: 2rem;
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
   text-align: center;
 }
 .services li {
