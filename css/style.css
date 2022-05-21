@@ -100,7 +100,7 @@ h1 {
   }
 }
 .main__article {
-  padding: 5rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .main__list {
@@ -589,7 +589,7 @@ h1 {
 }
 .services {
   background-color: white;
-  padding: 2rem;
+  padding: 2rem 1rem;
   margin: 0 auto;
   width: 90%;
   text-align: center;
