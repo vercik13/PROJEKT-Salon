@@ -1,13 +1,13 @@
-@use "global";
+@use 'global';
 
 
 .services {
-  background-color: $global-color-primary;
+  background-color: global.$c-primary;
   padding: 2rem 3rem;
   margin: 0 auto;
   width: 70%;
   text-align: center;
- 
+
 
   li {
     text-align: left;
@@ -17,6 +17,7 @@
   h3 {
     margin: 20px 0;
   }
+
   &__foto1,
   &__foto2 {
     max-width: 100%;
@@ -24,9 +25,10 @@
     margin: 0 auto;
   }
 }
+
 @media screen and (min-width: 1040px) {
   /* Služby */
-  
+
   .services {
     max-width: 1100px;
     padding: 50px;
@@ -37,6 +39,7 @@
     h3 {
       margin-top: 30px;
     }
+
     &__box,
     &__box--second {
       margin: 0 auto;
@@ -44,6 +47,7 @@
       justify-content: space-between;
       text-align: left;
     }
+
     &__text--primary {
       max-width: 550px;
     }
@@ -61,9 +65,11 @@
       width: 100%;
       max-width: 400px;
     }
+
     &__foto1 {
       margin-top: 50px;
     }
+
     &__box--second {
       order: 2;
     }

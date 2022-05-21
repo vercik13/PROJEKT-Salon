@@ -1,0 +1,9 @@
+@use 'global';
+
+
+.footer__copyright {
+  background-color: global.$c-transparent;
+  color: global.$c-primary;
+  padding: 10px;
+  text-align: center;
+}
