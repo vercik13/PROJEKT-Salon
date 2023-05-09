@@ -8,6 +8,7 @@
   margin-bottom: 1rem;
   background-color: global.$c-primary;
   border-radius: 2px;
+  border: 1px solid global.$c-shadow;
   box-shadow: 0px 5px 5px global.$c-shadow;
 
   &__image {
@@ -20,9 +21,11 @@
   }
 
   &__description {
+    width: 100%;
     font-size: 15px;
     padding: 0.5rem;
-    justify-content: center;
+    align-items: center;
+    justify-items: center;
   }
 
   a {
@@ -39,9 +42,14 @@
     margin: 1rem auto;
 
 
+
     &__image {
       max-width: 250px;
       width: 100%;
+    }
+
+    &__description {
+      text-align: center;
     }
   }
 }

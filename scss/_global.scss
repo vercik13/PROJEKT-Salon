@@ -3,8 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   box-sizing: inherit;
+  list-style: 1.5px;
 }
 
+$c-bg: #ededed;
 $c-primary: white;
 $c-secondary: #a3a3a3;
 $c-third: rgba(68, 184, 172);
@@ -12,10 +14,6 @@ $c-shadow: rgba(82, 82, 82, 0.5);
 $c-fourth: #dddbdb;
 $c-transparent: rgba(0, 0, 0, 0.5);
 
-
-html {
-  list-style: 1.5px;
-}
 
 label,
 input,
@@ -33,14 +31,12 @@ a {
 }
 
 body {
-  margin: 0;
   font-family: "Open sans", serif;
   animation: opening 1s ease-in-out forwards;
-  background-color: #ededed;
 }
 
-h1 {
-  font-family: "Open sans", cursive;
+main {
+  background-color: $c-bg;
 }
 
 .hero {
