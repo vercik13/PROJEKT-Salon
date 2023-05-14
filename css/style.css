@@ -444,7 +444,7 @@ main {
 .list {
   background-color: white;
   padding: 0 20px;
-  max-width: 550px;
+  max-width: 600px;
   margin: 0 auto;
 }
 .list h2 {
@@ -481,6 +481,7 @@ main {
   display: flex;
   max-width: 550px;
   width: 100%;
+  padding-bottom: 3rem;
 }
 
 .menu {
@@ -504,7 +505,7 @@ main {
 }
 .menu__link {
   display: block;
-  padding: 15px 0 15px 20px;
+  padding: 15px 0;
   text-align: center;
 }
 .menu__item--active, .menu__link {
@@ -523,7 +524,6 @@ main {
     box-shadow: none;
     display: flex;
     align-items: center;
-    justify-content: center;
     /* test button*/
   }
   .menu__togler {
@@ -534,11 +534,10 @@ main {
     background-color: white;
   }
   .menu__link {
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: white;
   }
-  .menu__item--active .menu__link {
-    text-align: center;
+  .menu__item--active {
     background-color: white;
     color: rgb(68, 184, 172);
   }

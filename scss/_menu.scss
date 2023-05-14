@@ -25,7 +25,7 @@
 
   &__link {
     display: block;
-    padding: 15px 0 15px 20px;
+    padding: 15px 0;
     text-align: center;
   }
 
@@ -51,7 +51,7 @@
     box-shadow: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+
 
     &__togler {
       display: none;
@@ -63,12 +63,12 @@
     }
 
     &__link {
-      justify-content: space-evenly;
+
+      justify-content: space-around;
       background-color: global.$c-primary;
     }
 
-    &__item--active &__link {
-      text-align: center;
+    &__item--active {
       background-color: global.$c-primary;
       color: global.$c-third;
     }
