@@ -27,23 +27,23 @@ Strie: 10 ošetření 1× za 4–6 týdnů
 
 #### Během 30 minutové procedury je možné ošetřit:
 
-<li>vybranou obličejovou část (např. celé čelo, tváře nebo oční okolí)</li>
-<li>krk</li>
-<li>hřbety rukou</li>
-<li>tělesné partie do velikosti 10 cm x 10 cm (partie na těle je možné kombinovat, ale výsledná plocha by neměla být větší)</li>
+<li class="article__li">vybranou obličejovou část (např. celé čelo, tváře nebo oční okolí)</li>
+<li class="article__li">krk</li>
+<li class="article__li">hřbety rukou</li>
+<li class="article__li">tělesné partie do velikosti 10 cm x 10 cm (partie na těle je možné kombinovat, ale výsledná plocha by neměla být větší)</li>
 
 #### Během 60 minutové procedury je možné ošetřit:
 
-<li>celý obličej</li>
-<li>krk a dekolt</li>
-<li>tělesné partie do velikosti 20 cm x 20 cm (partie na těle je možné kombinovat, ale výsledná plocha by neměla být větší)</li>
+<li class="article__li">celý obličej</li>
+<li class="article__li">krk a dekolt</li>
+<li class="article__li">tělesné partie do velikosti 20 cm x 20 cm (partie na těle je možné kombinovat, ale výsledná plocha by neměla být větší)</li>
 
 #### Během 90 minutové procedury je možné ošetřit:
 
-<li>celý obličej</li>
-<li>krk</li>
-<li>dekolt a hřbety rukou</li>
-<li>tělesné partie do velikosti 30 cm x 30 cm (partie na těle je možné kombinovat, ale výsledná plocha by neměla být větší)</li>
+<li class="article__li">celý obličej</li>
+<li class="article__li">krk</li>
+<li class="article__li">dekolt a hřbety rukou</li>
+<li class="article__li">tělesné partie do velikosti 30 cm x 30 cm (partie na těle je možné kombinovat, ale výsledná plocha by neměla být větší)</li>
 
 #### Kdy se dostaví výsledky
 
@@ -53,19 +53,19 @@ Běžně vidíte výsledek již po prvním ošetření. Dlouhotrvající a oprav
 
 #### Následující 2 dny po ošetření:
 
-<li>Nenanášet na ošetřovanou oblast make-up.</li>
-<li>Nesahat si na ošetřovanou oblast z důvodu zanesení infekce.</li>
-<li>Nenavštěvovat zakouřené prostory, saunu, páru, bazén a další místa, kde by mohlo dojít k infekci.</li>
-<li>Vyhýbat se nadměrnému pocení.</li>
-<li>V den ošetření pokožku neomývat mýdlem a šamponem, pouze čistit odličovacími prostředky.</li>
-<li>Ke zmírnění reakce po ošetření je možné použít lokální ochlazování (obklady, gelové polštářky – dbát na hygienu).</li>
+<li class="article__li">Nenanášet na ošetřovanou oblast make-up.</li>
+<li class="article__li">Nesahat si na ošetřovanou oblast z důvodu zanesení infekce.</li>
+<li class="article__li">Nenavštěvovat zakouřené prostory, saunu, páru, bazén a další místa, kde by mohlo dojít k infekci.</li>
+<li class="article__li">Vyhýbat se nadměrnému pocení.</li>
+<li class="article__li">V den ošetření pokožku neomývat mýdlem a šamponem, pouze čistit odličovacími prostředky.</li>
+<li class="article__li">Ke zmírnění reakce po ošetření je možné použít lokální ochlazování (obklady, gelové polštářky – dbát na hygienu).</li>
 
 #### Následujících 14 dní po ošetření:
 
-<li>Nevystavovat se sluníčku či soláriu (v případě sluníčka – chránit se ochranou s vyšším faktorem).</li>
-<li>Neaplikovat Botox, nebo výplňové materiály.</li>
-<li>Neprovádět chemický peeling.</li>
-<li>Pokožku maximálně šetřit a pravidelně hydratovat.</li>
+<li class="article__li">Nevystavovat se sluníčku či soláriu (v případě sluníčka – chránit se ochranou s vyšším faktorem).</li>
+<li class="article__li">Neaplikovat Botox, nebo výplňové materiály.</li>
+<li class="article__li">Neprovádět chemický peeling.</li>
+<li class="article__li">Pokožku maximálně šetřit a pravidelně hydratovat.</li>
 
 #### Kontraindikace
 
@@ -74,3 +74,28 @@ Poruchy srážlivosti krve, infekční onemocnění vč. herpes, akutně probíh
 #### Upozornění
 
 Pokožka může být po ošetření až 3 dny zarudlá a podrážděná. Po ošetření dochází z hloubkovému peelingovému efektu, a pokožka tak může vytvářet šupinky, což je častým správným projevem tohoto ošetření. Důležité je pleť často hydratovat (promazávat), i několikrát denně.
+
+<div class="container">
+
+   <img class="main__gallery" />
+    <a
+      data-fslightbox
+      href="/images/mikrojehlickovani.jpg">
+      <img class="article__image" src="/images/mikrojehlickovani.jpg" alt="mikrojehličková terapie"
+  /></a>
+
+   <img class="main__gallery" />
+    <a
+      data-fslightbox
+      href="/images/mikrojehlickovani1.jpg">
+      <img class="article__image" src="/images/mikrojehlickovani1.jpg" alt="mikrojehličková terapie"
+  /></a>
+
+   <img class="main__gallery" />
+    <a
+      data-fslightbox
+      href="/images/mikrojehlickovani2.jpg">
+      <img class="article__image" src="/images/mikrojehlickovani2.jpg" alt="mikrojehličková terapie"
+  /></a>
+
+</div>

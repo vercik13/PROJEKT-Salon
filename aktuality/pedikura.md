@@ -24,3 +24,19 @@ Pedikůru začínáme namáčením nohou ve vodě s bylinnou solí nebo vonnými
 #### Kdy na pedikůru nejít?
 
 Máte-li nějaké plísňové nebo jiné infekce nohou, je zpravidla lepší navštívit kožního lékaře, který Vám s tímto problémem pomůže.
+
+<div class="container">
+  <img class="main__gallery" />
+    <a
+      data-fslightbox
+      href="/images/pedikura.jpeg">
+      <img class="article__image" src="/images/pedikura.jpeg" alt="pedikůra kosmetika"
+  /></a>
+
+  <img class="main__gallery" />
+    <a
+      data-fslightbox
+      href="/images/pedikura-kosmetika.jpeg">
+      <img class="article__image" src="/images/pedikura-kosmetika.jpeg" alt="pedikůra kosmetika"
+  /></a>
+</div>

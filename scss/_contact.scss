@@ -1,26 +1,30 @@
 @use 'global';
 
-.kontakt__title {
-  padding: 2rem;
-  text-align: center;
-
-  .kontakt {
-    padding: 0.5rem;
-  }
-
-  .contact__form {
-    display: flex;
-  }
+.contact__container {
+  text-align: left;
 }
+
+.contact__button {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.contact__facebook {
+  margin-right: 1rem;
+}
+
+.contact__form {
+  display: flex;
+}
+
 
 .form-wrapper {
   max-height: 100vh;
   background: url('/images/salon-background9.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 300px;
+  max-width: 400px;
   width: 100%;
-  align-items: center;
 }
 
 .form-head {
@@ -29,21 +33,21 @@
 }
 
 .name-form,
-.email-form {
-  display: flex;
-  padding: 1rem;
-  text-align: left;
-}
-
+.email-form,
 .text-form {
   display: flex;
-  padding: 1rem;
-  text-align: center;
+  justify-content: left;
+  padding: 0.5rem;
 }
 
-.from-wrapper label {
-  margin: 0rem 3rem;
+input,
+textarea {
+  padding: 0.5rem;
+  font-size: 12px;
+  overflow: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 .contact__form button {
   display: flex;
@@ -56,71 +60,34 @@
   cursor: pointer;
 }
 
-.contact__map--site {
-  display: flex;
-  max-height: 80vh;
-  margin: 1rem;
-}
-
-
-.contact {
-  max-height: 90vh;
-  padding: 2rem;
-  background-image: url("/images/salon-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: global.$c-primary;
-
-  a {
-    color: global.$c-primary;
-  }
-
-  &__box {
-    padding: 10px;
-  }
-
-  &__button {
-    margin-top: 1rem;
-    display: flex;
-  }
-
-  &__facebook {
-    margin-right: 1rem;
-  }
-
-  &__map {
-    display: flex;
-  }
-}
-
-
 
 
 @media screen and (min-width: 1040px) {
 
-  .kontakt {
+  .contact__container {
     display: flex;
     padding: 1rem 2rem;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
-  .contact__address--site {
+  .contact__address {
+    width: 50%;
     padding-top: 6rem;
   }
 
-  .form-wrapper {
-    max-width: 100%;
+  .contact__form {
+    width: 50%;
+    //margin-left: 8rem;
   }
 
-  .contact {
-    padding: 2rem auto;
-    display: flex;
-    justify-content: space-around;
+  .name-form,
+  .email-form,
+  .text-form {
+    justify-content: center;
+  }
 
-    &__box {
-      background: global.$c-transparent;
-      padding: 2rem;
-    }
+  input,
+  textarea {
+    width: 70%;
   }
 }

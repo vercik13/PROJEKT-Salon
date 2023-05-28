@@ -48,42 +48,40 @@ layout: layouts/sablona.njk
 </section>
 
 <div class="hero">
-  <section class="about">
-    <div class="about__box">
-      <p class="about__text">
-        Ahoj, vítám tě na svých webových stránkách a zároveň bych ti ráda řekla něco o sobě. Jmenuji se Pavlína a ráda pomáhám s problémy s pletí. Nejdříve to byl jen koníček, ale poté, co jsem se starala o pleť rodině a kamarádkám, jsem se rozhodla otevřít si svůj vlastní salón. Pracuji se Švýcarsko-polskou kosmeceutikou Larens, jejíž produkty jsou dělané z rybích peptidů a lisované za studena. Právě díky tomu mají větší účinky v boji proti příznakům stárnutí a kožních problémů.
-      </p>
+  <div class="aside">
+    <div class="about">
+      <div class="about__text">
+        <p class="about__text">
+          Ahoj, vítám tě na svých webových stránkách a zároveň bych ti ráda řekla něco o sobě. Jmenuji se Pavlína a ráda pomáhám s problémy s pletí. Nejdříve to byl jen koníček, ale poté, co jsem se starala o pleť rodině a kamarádkám, jsem se rozhodla otevřít si svůj vlastní salón. Pracuji se Švýcarsko-polskou kosmeceutikou Larens, jejíž produkty jsou dělané z rybích peptidů a lisované za studena. Právě díky tomu mají větší účinky v boji proti příznakům stárnutí a kožních problémů.
+        </p>
+      </div>
+      <div class="about__profil">
+        <img class="about__photo" src="/images/profil.jpg" alt="osobní foto" />
+        <p>Těším se na setkání s Vámi :-)</p>
+        <button class="about__button"><a href="/kontakt/">Kontaktujte mě</a></button>
+        <p class="about__certificate">Certifikace</p>
+
+        <img class="main__gallery" />
+        <a
+          data-fslightbox
+          href="/images/fotky/salon-foto6.jpg"
+          ><img class="about__certificate--photo" src="/images/certificate.png" alt="certificate"
+        /></a>
+      </div>
     </div>
-    <div class="about__profil">
-      <img class="about__profil--photo" src="/images/profil.jpg" alt="osobní foto" />
 
-      <p>Těším se na setkání s Vámi :-)</p>
-
-      <button class="about__button"><a href="/kontakt/">Kontaktujte mě</a></button>
-
-      <p class="about__certificate">Certifikace</p>
-      <img
-        class="about__certificate--photo"
-        src="/images/certificate.png"
-        alt="certifikát"
-      />
-    </div>
-    
-  </section>
-
-  <div class="aside__wrapper">
+  
     <h2>Novinky</h2>
-    <aside class="aside">
-      
+    <aside class="aside__wrapper">
       
       {% for post in collections.aktuality | reverse | limit(3) %}
 
-      <div class="clanek">
-        <img class="clanek__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
+      <div class="aside__article">
+        <img class="aside__article__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
 
-        <div class="clanek__description">
-          <h2 class="clanek__name">{{ post.data.title }}</h2>
-          <p class="clanek__description">{{ post.data.perex }}</p>
+        <div class="aside__article__content">
+          <h2 class="aside__article__name">{{ post.data.title }}</h2>
+          <p class="aside__article__description">{{ post.data.perex }}</p>
           <p><a href="{{ post.url }}">Více informací...</a></p>
         </div>
       </div>

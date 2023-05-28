@@ -22,6 +22,10 @@ a {
   color: black;
 }
 
+h1 {
+  margin: 1rem 0;
+}
+
 body {
   font-family: "Open sans", serif;
   animation: opening 1s ease-in-out forwards;
@@ -44,22 +48,17 @@ main {
 }
 .about {
   display: block;
-  padding: 2rem;
   margin: 0 auto;
   text-align: center;
 }
-.about__text {
-  display: flex;
-}
-.about__profil--photo {
-  display: flex;
-  margin: 2rem auto;
+.about__photo {
+  margin: 1.5rem auto;
   max-width: 15rem;
   width: 100%;
   border-radius: 50%;
 }
 .about__button {
-  margin: 2rem auto;
+  margin: 1.5rem auto;
   padding: 1rem;
   background-color: rgb(68, 184, 172);
   border: none;
@@ -68,18 +67,18 @@ main {
 }
 .about__certificate--photo {
   width: 80px;
-  margin: 1rem auto 1rem auto;
+  margin: 1rem auto;
 }
 
 @media screen and (min-width: 1040px) {
   .about {
     background-color: white;
     display: flex;
-    text-align: center;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
   }
-  .about__box {
-    padding: 8rem 0 2rem 5rem;
+  .about__text {
+    margin-left: 3rem;
     flex: 1 1 50%;
     text-align: center;
   }
@@ -94,19 +93,19 @@ main {
   }
 }
 .main__article {
-  padding: 2rem 1rem;
+  padding: 4rem 2rem;
 }
 
 .main__list {
   padding: 2rem;
 }
 
-.article__title {
-  padding-top: 2rem;
-}
-
 .article__image {
+  margin-top: 1rem;
   max-width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -120,105 +119,112 @@ main {
   padding: 0.8rem 0 0.5rem 0;
 }
 
-.aside {
-  display: block;
-  padding: 2rem;
-  margin: 0 auto;
-  text-align: center;
-}
-.aside__text {
-  display: flex;
-}
-.aside__profil--photo {
-  display: flex;
-  margin: 2rem auto;
-  max-width: 15rem;
-  width: 100%;
-  border-radius: 50%;
-}
-.aside__button {
-  margin: 2rem auto;
-  padding: 1rem;
-  background-color: rgb(68, 184, 172);
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-}
-.aside__certificate--photo {
-  width: 80px;
-  margin: 1rem auto 1rem auto;
-}
-.aside__wrapper {
-  padding: 1rem 0;
-}
-.aside__wrapper h2 {
-  margin: 0;
-  padding-top: 0.5rem;
-  text-align: center;
+.article__li {
+  margin-left: 1rem;
 }
 
+.aside__wrapper {
+  padding: 3rem 0 0 0;
+}
+
+.aside {
+  margin: 0;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+/*
+
+  &__profil--photo {
+    display: flex;
+    margin: 2rem auto;
+    max-width: 15rem;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  &__button {
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: global.$c-third;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  &__certificate--photo {
+    width: 80px;
+    margin: 1rem auto 1rem auto;
+  }*/
 @media screen and (min-width: 1040px) {
-  .aside {
+  .aside__wrapper {
     margin: 0 auto;
     max-width: 90%;
   }
-  .aside__wrapper {
+  .aside {
     background-color: white;
     margin: 0 auto;
   }
 }
-.clanek {
+.aside__article {
+  text-align: center;
   display: inline-block;
-  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  max-width: 350px;
   width: 100%;
-  margin-bottom: 1rem;
-  background-color: white;
   border-radius: 2px;
-  border: 1px solid rgba(82, 82, 82, 0.5);
-  box-shadow: 0px 5px 5px rgba(82, 82, 82, 0.5);
+  box-shadow: 0px 5px 7px rgba(82, 82, 82, 0.5);
 }
-.clanek__image {
+.aside__article__image {
+  width: 300px;
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.aside__article__content {
+  padding: 0.5rem 0;
   width: 100%;
 }
-.clanek__name {
-  padding: 0;
-  margin: 0;
+.aside__article__name {
+  font-size: 16px;
 }
-.clanek__description {
-  width: 100%;
-  font-size: 15px;
-  padding: 0.5rem;
-  align-items: center;
-  justify-items: center;
-}
-.clanek a {
-  padding: 1rem;
+.aside__article a {
   color: rgb(68, 184, 172);
 }
 
 @media screen and (min-width: 1040px) {
-  .clanek {
+  .aside__article {
     display: flex;
-    flex: 1 1 auto;
     max-width: 80%;
-    margin: 1rem auto;
+    height: 250px;
   }
-  .clanek__image {
+  .aside__article__image {
     max-width: 250px;
     width: 100%;
+    height: 250px;
   }
-  .clanek__description {
-    text-align: center;
+  .aside__article__content {
+    padding: 2rem 0.5;
+    display: grid;
+    align-items: center;
   }
 }
-.kontakt__title {
-  padding: 2rem;
-  text-align: center;
+.contact__container {
+  text-align: left;
 }
-.kontakt__title .kontakt {
-  padding: 0.5rem;
+
+.contact__button {
+  margin-top: 1rem;
+  display: flex;
 }
-.kontakt__title .contact__form {
+
+.contact__facebook {
+  margin-right: 1rem;
+}
+
+.contact__form {
   display: flex;
 }
 
@@ -227,9 +233,8 @@ main {
   background: url("/images/salon-background9.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 300px;
+  max-width: 400px;
   width: 100%;
-  align-items: center;
 }
 
 .form-head {
@@ -238,20 +243,19 @@ main {
 }
 
 .name-form,
-.email-form {
-  display: flex;
-  padding: 1rem;
-  text-align: left;
-}
-
+.email-form,
 .text-form {
   display: flex;
-  padding: 1rem;
-  text-align: center;
+  justify-content: left;
+  padding: 0.5rem;
 }
 
-.from-wrapper label {
-  margin: 0rem 3rem;
+input,
+textarea {
+  padding: 0.5rem;
+  font-size: 12px;
+  overflow: hidden;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .contact__form button {
@@ -265,14 +269,33 @@ main {
   cursor: pointer;
 }
 
-.contact__map--site {
-  display: flex;
-  max-height: 80vh;
-  margin: 1rem;
+@media screen and (min-width: 1040px) {
+  .contact__container {
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+  }
+  .contact__address {
+    width: 50%;
+    padding-top: 6rem;
+  }
+  .contact__form {
+    width: 50%;
+  }
+  .name-form,
+  .email-form,
+  .text-form {
+    justify-content: center;
+  }
+  input,
+  textarea {
+    width: 70%;
+  }
 }
-
-.contact {
-  max-height: 90vh;
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 2rem;
   background-image: url("/images/salon-background.jpg");
   background-repeat: no-repeat;
@@ -280,99 +303,68 @@ main {
   background-position: center;
   color: white;
 }
-.contact a {
+.footer a {
   color: white;
 }
-.contact__box {
+.footer__box {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+.footer__address {
+  padding: 1rem;
+}
+.footer__button {
+  display: flex;
+  padding: 0 1rem;
+}
+.footer__map {
+  padding: 1rem 0;
+  overflow: hidden;
+}
+
+.footer__copyright {
+  background: rgb(37, 37, 37);
+  color: white;
   padding: 10px;
-}
-.contact__button {
-  margin-top: 1rem;
-  display: flex;
-}
-.contact__facebook {
-  margin-right: 1rem;
-}
-.contact__map {
-  display: flex;
+  text-align: center;
+  border-top: 1px solid white;
 }
 
 @media screen and (min-width: 1040px) {
-  .kontakt {
-    display: flex;
-    padding: 1rem 2rem;
-    justify-content: space-around;
-  }
-  .contact__address--site {
-    padding-top: 6rem;
-  }
-  .form-wrapper {
-    max-width: 100%;
-  }
-  .contact {
-    padding: 2rem auto;
-    display: flex;
-    justify-content: space-around;
-  }
-  .contact__box {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 2rem;
+  .footer__map {
+    padding: 0;
+    overflow: hidden;
   }
 }
-.footer__copyright {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-  text-align: center;
-}
-
-.gallery {
-  padding: 2rem;
-  text-align: center;
-}
-
-/*.container {
-  display: inline-block;
-}*/
-.main__photo {
-  margin: 0 auto;
+.gallery__container {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  opacity: 1;
-  transition: 0.3s ease-in-out;
+}
+
+.gallery__item {
+  flex-basis: 100%;
+}
+
+.main__photo {
+  width: 98%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main__photo:hover {
   opacity: 0.7;
 }
 
+@media screen and (min-width: 747px) {
+  .gallery__item {
+    flex-basis: 48.7%;
+  }
+}
 @media screen and (min-width: 1040px) {
-  /* Fotogalerie */
-  /* .container {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     grid-template-rows: repeat(6, 400px);
-     gap: 2px;
-   }
-
-  /* .main__galery img {
-     width: 300px;
-     width: 100%;
-     height: 100%;
-     -o-object-fit: cover;
-     object-fit: cover;
-   }*/
-  .container {
-    display: flex;
-    flex-wrap: wrap;
+  .gallery__item {
+    flex-basis: 32.7%;
   }
-  .main__photo {
-    max-width: 300px;
-    flex: 1 1 33.3333333333%;
-  }
-  /*.main__photo {
-
-    }*/
 }
 .glide {
   height: 500px;
@@ -442,46 +434,38 @@ main {
 }
 /* Ceník */
 .list {
-  background-color: white;
-  padding: 0 20px;
   max-width: 600px;
   margin: 0 auto;
 }
-.list h2 {
-  padding: 2rem;
+.list h3 {
+  padding: 3rem 0 0.5rem 0;
   text-align: center;
 }
 .list p,
-.list h3 {
+.list h4 {
   text-align: left;
   margin: 0;
 }
-.list h3 {
-  margin-bottom: 20px;
-}
 .list__box {
-  margin-bottom: 20px;
-  padding-bottom: 5px;
+  padding: 0.5rem 0;
   border-bottom: 1px solid black;
+  line-height: 1.8;
 }
-.list__title {
+.list__title, .list__title--dot {
   display: flex;
   justify-content: space-between;
 }
 .list__title--dot {
-  display: flex;
-  justify-content: space-between;
   border-bottom: 1px rgba(82, 82, 82, 0.5) dotted;
 }
 .list__price {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bolder;
 }
 .list__foto {
   display: flex;
-  max-width: 550px;
   width: 100%;
-  padding-bottom: 3rem;
+  padding: 1rem 0 3rem 0;
 }
 
 .menu {
@@ -574,12 +558,9 @@ main {
   width: 90%;
   text-align: center;
 }
-.services li {
-  text-align: left;
-}
 .services h2,
 .services h3 {
-  margin: 20px 0;
+  margin: 0.5rem 0;
 }
 .services__foto1, .services__foto2 {
   max-width: 100%;

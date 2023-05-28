@@ -3,20 +3,22 @@ layout: layouts/sablona.njk
 title: Aktuality
 ---
 
+<title>Diamond kosmetický salón | Služby</title>
+
 <div class="hero">
-  <div class="aside__wrapper">
+  <div class="aside">
     
     <h2>Nabídka služeb</h2>
-    <aside class="aside">
+    <aside class="aside__wrapper">
 
     {% for post in collections.aktuality | reverse %}
 
-      <div class="clanek">
-        <img class="clanek__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
+      <div class="aside__article">
+        <img class="aside__article__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
 
-        <div class="clanek__content">
-          <h2 class="clanek__name">{{ post.data.title }}</h2>
-          <p class="clanek__description">{{ post.data.perex }}</p>
+        <div class="aside__article__content">
+          <h2 class="aside__article__name">{{ post.data.title }}</h2>
+          <p class="aside__article__description">{{ post.data.perex }}</p>
           <p><a href="{{ post.url }}">Více informací...</a></p>
         </div>
       </div>

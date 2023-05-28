@@ -1,14 +1,16 @@
 @use 'global';
 
-.aside {
-  display: block;
-  padding: 2rem;
-  margin: 0 auto;
-  text-align: center;
+.aside__wrapper {
+  padding: 3rem 0 0 0;
+}
 
-  &__text {
-    display: flex;
-  }
+.aside {
+  margin: 0;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+/*
 
   &__profil--photo {
     display: flex;
@@ -30,28 +32,20 @@
   &__certificate--photo {
     width: 80px;
     margin: 1rem auto 1rem auto;
-  }
+  }*/
 
-  &__wrapper {
-    padding: 1rem 0;
-  }
 
-  &__wrapper h2 {
-    margin: 0;
-    padding-top: 0.5rem;
-    text-align: center;
-  }
-}
 
 @media screen and (min-width: 1040px) {
 
-  .aside {
+  .aside__wrapper {
     margin: 0 auto;
     max-width: 90%;
-
-    &__wrapper {
-      background-color: global.$c-primary;
-      margin: 0 auto;
-    }
   }
+
+  .aside {
+    background-color: global.$c-primary;
+    margin: 0 auto;
+  }
+
 }

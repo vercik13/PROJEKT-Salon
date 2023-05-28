@@ -2,14 +2,16 @@
 layout: layouts/sablona.njk
 ---
 
+<title>Diamond kosmetický salón | Kontakt</title>
+
 <!-- Kontakt -->
 <div class="hero">
- 
-  <h2 class="kontakt__title">Kontakt</h2>
-  <section class="kontakt">
-    
-    <div class="contact__wrapper">
-      <div class="contact__address--site">
+  <div class="aside">
+  <h2>Kontakt</h2>
+  <aside class="aside__wrapper">
+  <section class="contact__container">
+    <div class="contact__address">
+      <div class="contact__detail">
         <p><strong>Pavlína Hintnaus Kloudová</strong></p>
         <p><strong>IČO: </strong>09267191</p>
         <p>Česká 638/8 Residence Kaskáda, 58601 Jihlava - Horní Kosov</p>
@@ -24,14 +26,14 @@ layout: layouts/sablona.njk
       <div class="contact__button">
         <div class="contact__facebook">
           <a
-            href="https://www.facebook.com/Diamond-kosmetick%C3%BD-sal%C3%B3n-110940077300763/"
-            ><img src="/images/fb.svg" alt="facebook" width="70"
+            href="https://www.facebook.com/Diamond-kosmetick%C3%BD-sal%C3%B3n-110940077300763/" target="_blank"
+            ><img src="/images/facebook.png" alt="facebook" width="70"
           /></a>
         </div>
         <div class="contact__instagram">
           <a
-            href="https://www.instagram.com/diamond_kosmetika/?fbclid=IwAR1PNkIwagCR5Fq2vdIW_e-BnkgRCrEMomgTm0YoEhdHloLek4voPgkykHA"
-            ><img src="/images/insta.svg" alt="instagram" width="70"
+            href="https://www.instagram.com/diamond_kosmetika/?fbclid=IwAR1PNkIwagCR5Fq2vdIW_e-BnkgRCrEMomgTm0YoEhdHloLek4voPgkykHA" target="_blank"
+            ><img src="/images/instagram.png" alt="instagram" width="70"
           /></a>
         </div>
       </div>
@@ -40,30 +42,30 @@ layout: layouts/sablona.njk
     <div class="contact__form">
       <div class="form-wrapper">
         <header class="form-head">
-          <h3>Kontaktní formulář</h3>
+          <h4>Kontaktní formulář</h4>
         </header>
-        <form action="https://formspree.io/f/mbjwqrar"
-        method="POST">
+
+        <div class="form">
           <div class="name-form">
             <label for="name"></label>
-            <input type="text" name="name" required placeholder="Jméno" />
+            <input type="text" id="name" name="name" placeholder="Jméno" required/>
           </div>
           <div class="email-form">
             <label for="email"></label>
-            <input type="email" required name="_replyto" placeholder="Email"/>
+            <input type="email" id="email" name="email" placeholder="Email" required/>
           </div> 
           <div class="text-form">
             <label for="text"></label>
-            <textarea name="message" cols="50" rows="10" placeholder="Zpráva"></textarea> 
+            <textarea type="text" id="message" name="message" cols="40" rows="10" placeholder="Zpráva" required></textarea> 
           </div>  
-           
-          <button value="Send" type="submit">Odeslat</button>
-        </form>
+        </div>   
+          <button onclick="SendMail()" value="send" type="submit">Odeslat</button>
+   <!-- </form>-->
       </div>
     </div>
   </section>
 
-  <div class="contact__map--site">
+  <div class="contact__map">
     <iframe
       style="border: none"
       src="https://frame.mapy.cz/zakladni?x=15.5503670&y=49.4059924&z=17&source=addr&id=14015666"
@@ -72,6 +74,6 @@ layout: layouts/sablona.njk
       frameborder="0"
     ></iframe>
   </div>
-  
-
+  </aside>
+  </div>
 </div>

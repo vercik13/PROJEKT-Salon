@@ -21,3 +21,12 @@ Mikromasáž ultrazvukem osvěžuje unavené a oslabené kožní vlákna a aktiv
 #### Radiofrekvence
 
 Speciální determinována ultrajemná vysokofrekvenční vlnová délka proniká pokožkou do jejího nejniternějších vrstev, rovnoměrně ji prohřívá na 45 - 50 ° C, čímž zlepšuje průtok krve a lymfatický oběh.
+
+<div class="container">
+  <img class="main__gallery" />
+    <a
+      data-fslightbox
+      href="/images/zehlicka.jpg">
+      <img class="article__image" src="/images/zehlicka.jpg" alt="galvanický lift - žehlička"
+  /></a>
+</div>

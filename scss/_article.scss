@@ -1,19 +1,19 @@
 @use 'global';
 
 .main__article {
-  padding: 2rem 1rem;
+  padding: 4rem 2rem;
 }
 
 .main__list {
   padding: 2rem;
 }
 
-.article__title {
-  padding-top: 2rem;
-}
 
 .article__image {
+  margin-top: 1rem;
   max-width: 300px;
+  height: 300px;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -25,4 +25,8 @@
 .article__text h4,
 .article__text p {
   padding: 0.8rem 0 0.5rem 0;
+}
+
+.article__li {
+  margin-left: 1rem;
 }

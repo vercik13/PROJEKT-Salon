@@ -1,9 +1,54 @@
 @use 'global';
 
 
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+  background-image: url("/images/salon-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: global.$c-primary;
+
+  a {
+    color: global.$c-primary;
+  }
+
+  &__box {
+    padding: 1rem;
+    background: rgb(0, 0, 0, 0.5);
+  }
+
+  &__address {
+    padding: 1rem;
+  }
+
+  &__button {
+    display: flex;
+    padding: 0 1rem;
+  }
+
+  &__map {
+    padding: 1rem 0;
+    overflow: hidden;
+  }
+
+
+}
+
 .footer__copyright {
-  background-color: global.$c-transparent;
+  background: rgb(37, 37, 37);
   color: global.$c-primary;
   padding: 10px;
   text-align: center;
+  border-top: 1px solid white;
+}
+
+@media screen and (min-width: 1040px) {
+  .footer__map {
+    padding: 0;
+    overflow: hidden;
+  }
 }
